@@ -12,7 +12,6 @@ const policySeed = [
     legislation: ["AI Governance Framework"],
     countryCode: "AUD",
     topic: "AI",
-    policyId: "1",
     status: "Implemented",
     description: "Personal Data Protection Commission (PDPC) & IDMA published AIGF in 2020",
     lastUpdated: "Thurs, 25 Jan 2024",
@@ -20,13 +19,12 @@ const policySeed = [
   },
   {
     legislation: ["Blueprint for an AI Bill of Rights"],
-    countryCode: "Blueprint for an AI Bill of Rights",
-    topic: "1",
-    policyId: "http://example.com/image1.jpg",
-    status: "http://example.com/book1",
-    description: "First Book Title",
-    lastUpdated: "First Book Title",
-    dateCreated: "First Book Title"
+    countryCode: "USD",
+    topic: "Competition",
+    status: "Passed",
+    description: "WIll go into effect May 2023.",
+    lastUpdated: "Wed, 24 Jan 2024",
+    dateCreated: "Tues, 23 Jan 2024"
   },
 ];
 
