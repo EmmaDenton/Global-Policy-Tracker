@@ -5,12 +5,16 @@ import { setContext } from '@apollo/client/link/context';
 
 import Navbar from './components/Navbar';
 import Map from './components/Map';
+import SearchPolicy from './pages/SearchPolicy';
 
 const client = new ApolloClient({
   // Set up our client to execute the `authLink` middleware prior to making the request to our GraphQL API
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
 });
+
+const handlePageChange = (page) => setCurrentPage(page);
+
 
 // Construct request middleware that will attach the JWT token to every request as an `authorization` header
 const authLink = setContext((_, { headers }) => {
@@ -25,11 +29,17 @@ const authLink = setContext((_, { headers }) => {
   };
 });
 
+
 function App() {
+  const renderPage = () => {
+    switch (currentPage) {
+      case '/':
+        return <SearchPolicy />;
+      }}
   return (
     <ApolloProvider client={client}>
     <>
-      <Navbar />
+      <Navbar currentPage={currentPage} handlePageChange={handlePageChange}/>
       <Outlet />
       <Map />
     </>
