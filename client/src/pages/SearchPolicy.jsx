@@ -12,11 +12,10 @@ import {
 } from 'react-bootstrap';
 
 import Auth from '../utils/auth';
-import { searchGoogleBooks } from '../utils/API';
-import { SAVE_BOOK } from '../utils/mutations';
-import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
+// import { SAVE_POLICY } from '../utils/mutations';
+// import { savePolicyIds, getPolicyIds } from '../utils/localStorage';
 
-const SearchBooks = () => {
+const SearchPolicy = () => {
   // create state for holding returned google api data
   const [searchedBooks, setSearchedBooks] = useState([]);
   // create state for holding our search field data
@@ -90,7 +89,7 @@ const SearchBooks = () => {
     <>
       <div className="text-light bg-dark p-5">
         <Container>
-          <h1>Search for Books!</h1>
+          <h1>Search Policy</h1>
           <Form onSubmit={handleFormSubmit}>
             <Row>
               <Col xs={12} md={8}>
@@ -152,4 +151,4 @@ const SearchBooks = () => {
   );
 };
 
-export default SearchBooks;
+export default SearchPolicy;

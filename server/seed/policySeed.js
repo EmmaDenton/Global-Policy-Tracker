@@ -7,22 +7,26 @@ mongoose.connect('mongodb://localhost/3001', {
 });
 
 
-const bookSeed = [
+const policySeed = [
   {
-    authors: ["Author One"],
-    description: "Description for the first book",
-    bookId: "1",
-    image: "http://example.com/image1.jpg",
-    link: "http://example.com/book1",
-    title: "First Book Title"
+    legislation: ["AI Governance Framework"],
+    countryCode: "AUD",
+    topic: "AI",
+    policyId: "1",
+    status: "Implemented",
+    description: "Personal Data Protection Commission (PDPC) & IDMA published AIGF in 2020",
+    lastUpdated: "Thurs, 25 Jan 2024",
+    dateCreated: "Wed, 24 Jan 2024"
   },
   {
-    authors: ["Author Two", "Author Three"],
-    description: "Description for the second book",
-    bookId: "2",
-    image: "http://example.com/image2.jpg",
-    link: "http://example.com/book2",
-    title: "Second Book Title"
+    legislation: ["Blueprint for an AI Bill of Rights"],
+    countryCode: "Blueprint for an AI Bill of Rights",
+    topic: "1",
+    policyId: "http://example.com/image1.jpg",
+    status: "http://example.com/book1",
+    description: "First Book Title",
+    lastUpdated: "First Book Title",
+    dateCreated: "First Book Title"
   },
 ];
 
