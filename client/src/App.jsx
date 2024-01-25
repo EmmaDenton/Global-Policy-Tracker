@@ -12,20 +12,12 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-const handlePageChange = (page) => setCurrentPage(page);
-
-
 
 function App() {
-  const renderPage = () => {
-    switch (currentPage) {
-      case '/':
-        return <SearchPolicy />;
-      }}
   return (
     <ApolloProvider client={client}>
     <>
-      <Navbar currentPage={currentPage} handlePageChange={handlePageChange}/>
+      <Navbar/>
       <Outlet />
       <Map />
     </>
