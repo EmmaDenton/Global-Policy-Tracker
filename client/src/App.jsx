@@ -16,7 +16,7 @@ export default function App() {
     <ApolloProvider client={client}>
       <Outlet>
         <>
-          <Navbar />
+        <Navbar />
           <Routes>
             <Route path="/" element={<SearchPolicy />} />
             <Route path="/SearchPolicy" element={<SearchPolicy />} />

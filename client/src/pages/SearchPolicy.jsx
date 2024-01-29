@@ -1,5 +1,6 @@
 import { useMutation, gql } from '@apollo/client';
 import Map from '../components/Map';
+import Navbar from '../components/Navbar';
 
 
 import { useState, useEffect } from 'react';
@@ -10,7 +11,9 @@ import Auth from '../utils/auth';
 
 const SearchPolicy = () => {
  return (  
-    <div> <Map/> </div>
+    <div> 
+      <Navbar/>
+       <Map/> </div>
  )
 }
 
