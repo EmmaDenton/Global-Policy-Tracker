@@ -1,16 +1,18 @@
 // Note: Seed is not set up correctly. DB will not seed.
 
 const db = require('../config/connection');
-const { Tech } = require('../models');
+const { Policy, User } = require('../models');
 const cleanDB = require('./cleanDB');
 
-const policyData = require('./policySeed.json');
+const policySeed = require('./policySeed.json');
+const userSeed = require('./userSeed.json');
 
 db.once('open', async () => {
-  await cleanDB('Tech', 'teches');
-
-  await Policy.insertMany(policySeed);
-
+  await cleanDB('Policy', 'policies');
+  await cleanDB('User', 'users');
+  await User.create(userSeed);
+  await Policy.create(policySeed);
+  
   console.log('Policies seeded!');
   process.exit(0);
 });
