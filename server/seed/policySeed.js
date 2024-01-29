@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const Book = require('../models/Policy.js')
 
 mongoose.connect('mongodb://localhost/3001', {
   useNewUrlParser: true,
@@ -28,12 +27,4 @@ const policySeed = [
   },
 ];
 
-Book.insertMany(bookSeed)
-  .then(() => {
-    console.log('Data inserted');
-    mongoose.connection.close();
-  })
-  .catch((err) => {
-    console.error('Error inserting data', err); 
-    mongoose.connection.close();
-  });
+
