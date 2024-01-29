@@ -15,8 +15,10 @@ const AppNavbar = () => {
       <Navbar bg='dark' variant='dark' expand='lg'>
         <Container fluid>
           <Navbar.Brand as={Link} to='/'>
-            Google Books Search
+            Global Policy Tracker
           </Navbar.Brand>
+          <button onClick={() => handlePageSwitch('search')}>Search Policy</button>
+      <button onClick={() => handlePageSwitch('saved')}>Saved Policy</button>
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar' className='d-flex flex-row-reverse'>
             <Nav className='ml-auto d-flex'>
@@ -39,13 +41,13 @@ const AppNavbar = () => {
         </Container>
       </Navbar>
       {/* set modal data up */}
-      <Modal
+      {/* <Modal
         size='lg'
         show={showModal}
         onHide={() => setShowModal(false)}
         aria-labelledby='signup-modal'>
         {/* tab container to do either signup or login component */}
-        <Tab.Container defaultActiveKey='login'>
+        {/* <Tab.Container defaultActiveKey='login'>
           <Modal.Header closeButton>
             <Modal.Title id='signup-modal'>
               <Nav variant='pills'>
@@ -68,8 +70,8 @@ const AppNavbar = () => {
               </Tab.Pane>
             </Tab.Content>
           </Modal.Body>
-        </Tab.Container>
-      </Modal>
+        </Tab.Container> */}
+      {/* </Modal> */}
     </>
   );
 };

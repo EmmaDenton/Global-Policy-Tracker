@@ -1,11 +1,9 @@
-import './App.css';
-import { Outlet } from 'react-router-dom';
-import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink,} from '@apollo/client';
-import { setContext } from '@apollo/client/link/context';
-
+import React, { useState } from 'react';
+import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Navbar from './components/Navbar';
-import Map from './components/Map';
 import SearchPolicy from './pages/SearchPolicy';
+import SavedPolicy from './pages/SavedPolicy';
+import { Outlet, Routes, Route } from 'react-router-dom';
 
 const client = new ApolloClient({
   uri: '/graphql',
@@ -13,16 +11,19 @@ const client = new ApolloClient({
 });
 
 
-function App() {
+export default function App() {
   return (
     <ApolloProvider client={client}>
-    <>
-      <Navbar/>
-      <Outlet />
-      <Map />
-    </>
+      <Outlet>
+        <>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<SearchPolicy />} />
+            <Route path="/SearchPolicy" element={<SearchPolicy />} />
+            <Route path="/SavedPolicy" element={<SavedPolicy />} />
+          </Routes>
+        </>
+      </Outlet>
     </ApolloProvider>
   );
 }
-
-export default App;
