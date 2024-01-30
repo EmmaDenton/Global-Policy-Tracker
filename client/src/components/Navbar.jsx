@@ -23,14 +23,7 @@ const Navbar = () => {
             Donate
             </Link>
           </a>
-          <a>
-            <Link
-            to="/signup"
-            className={currentPage === '/Blog' ? 'nav-link active' : 'nav-link'} class="item"
-            >
-            Signup
-            </Link>
-          </a>
+          
           <div>
             <a >
             <Link
