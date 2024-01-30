@@ -76,6 +76,7 @@ const SignupForm = () => {
                   class="ui fluid large teal submit button"
                   style={{ cursor: 'pointer' }}
                   type="submit"
+                  id='submitButton'
                 >
                   Submit
                 </button>

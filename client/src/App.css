@@ -60,3 +60,10 @@ h1{
   font-weight: bolder;
   text-align: center;
 }
+#submitButton{
+  background-color: rgb(255, 196, 0);
+  color: black;
+}
+#submitButton:hover{
+  background-color: rgb(255, 223, 117);
+}

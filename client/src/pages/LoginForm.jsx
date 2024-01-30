@@ -70,6 +70,7 @@ const LoginForm = (props) => {
                   />
                   <button
                     class="ui fluid large teal submit button"
+                    id='submitButton'
                     style={{ cursor: 'pointer' }}
                     type="submit"
                   >
