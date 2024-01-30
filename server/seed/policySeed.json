@@ -1,0 +1,20 @@
+[
+    {
+      "legislation":"AI Governance Framework",
+      "countryCode":"AUD",
+      "topic":"AI",
+      "status":"Implemented",
+      "description":"Personal Data Protection Commission (PDPC) & IDMA published AIGF in 2020",
+      "lastUpdated":"Thurs, 25 Jan 2024",
+      "dateCreated":"Wed, 24 Jan 2024"
+    },
+    {
+      "legislation":"Blueprint for an AI Bill of Rights",
+      "countryCode":"USD",
+      "topic":"Competition",
+      "status":"Passed",
+      "description":"WIll go into effect May 2023.",
+      "lastUpdated":"Wed, 24 Jan 2024",
+      "dateCreated":"Tues, 23 Jan 2024"
+    }
+  ]
