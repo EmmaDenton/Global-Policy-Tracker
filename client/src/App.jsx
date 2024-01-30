@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import SearchPolicy from './pages/SearchPolicy';
 import SavedPolicy from './pages/SavedPolicy';
 import { Outlet, Routes, Route } from 'react-router-dom';
-
+import './App.css'
 const client = new ApolloClient({
   uri: '/graphql',
   cache: new InMemoryCache(),
@@ -14,9 +14,9 @@ const client = new ApolloClient({
 export default function App() {
   return (
     <ApolloProvider client={client}>
+      <Navbar />
       <Outlet>
         <>
-        <Navbar />
           <Routes>
             <Route path="/" element={<SearchPolicy />} />
             <Route path="/SearchPolicy" element={<SearchPolicy />} />

@@ -1,8 +1,9 @@
 body {
   font-family: 'Rubik', sans-serif;
+  background-color: rgb(250, 241, 224);
 }
 
-h1,
+
 h2,
 h3,
 h4,
@@ -14,4 +15,15 @@ h6 {
 .small {
   font-weight: 300;
   font-style: italic;
+}
+
+h1{
+  color: red;
+  font-size: 60px;
+}
+#mainContainer{
+  margin:80px
+}
+#containerLogin{
+  max-width: 450px;
 }
