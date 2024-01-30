@@ -55,3 +55,8 @@ h1{
   font-weight: bolder;
   font-size: 15px;
 }
+#titleForm{
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+}

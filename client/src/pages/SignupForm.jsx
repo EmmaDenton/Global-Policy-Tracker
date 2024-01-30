@@ -42,7 +42,7 @@ const SignupForm = () => {
     <main class="ui middle aligned center aligned grid" id="mainContainer">
       <div>
         <div class="column">
-          <h4 class="content">Sign Up</h4>
+          <h4 class="content" id='titleForm'>Sign Up</h4>
           <div class="ui large form" >
             {data ? (
               <p>
@@ -50,7 +50,7 @@ const SignupForm = () => {
                 <Link to="/">back to the homepage.</Link>
               </p>
             ) : (
-              <form onSubmit={handleFormSubmit}>
+              <form onSubmit={handleFormSubmit} class="ui stacked segment">
                 <input
                   placeholder="Your username"
                   name="username"

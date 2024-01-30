@@ -44,7 +44,7 @@ const LoginForm = (props) => {
       <main class="ui middle aligned center aligned grid" id='mainContainer'>
         <div >
           <div class="column">
-            <h4 class="content">Login</h4>
+            <h4 class="content" id='titleForm'>Login</h4>
             <div class="ui large form" >
               {data ? (
                 <p>

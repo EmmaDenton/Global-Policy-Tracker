@@ -18,7 +18,7 @@ const Navbar = () => {
           <a class="item" id='donateLink'>
             <Link
             to="/donate"
-            className={currentPage === '/Donate' ? 'nav-link active' : 'nav-link'} class="item" id='itemDonate'
+            className={currentPage === '/Donate' ? 'nav-link active' : 'nav-link'} class="ui primary button" id='itemDonate'
             >
             Donate
             </Link>
