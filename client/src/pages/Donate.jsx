@@ -5,7 +5,12 @@ const Donate = () => {
   
 
   return (
-    <h1>donateeeee</h1>
+    <div id='containerDonate'>
+      <h1>akl;sjhf</h1>
+      <h1>lkasjdhf</h1>
+      <h1>lkajshd</h1>
+    </div>
+    
   );
 };
 

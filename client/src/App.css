@@ -1,5 +1,6 @@
 body {
   font-family: 'Rubik', sans-serif;
+  background-color: orange;
 }
 
 h1,
@@ -14,4 +15,8 @@ h6 {
 .small {
   font-weight: 300;
   font-style: italic;
+}
+#containerDonate{
+  margin-top: 60px;
+  border: red solid 10px;
 }
