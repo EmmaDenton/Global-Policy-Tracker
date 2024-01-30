@@ -1,6 +1,7 @@
 body {
   font-family: 'Rubik', sans-serif;
-  background-color: rgb(250, 241, 224);
+  background-color: rgb(255, 254, 253);
+  color: black;
 }
 
 
@@ -22,8 +23,35 @@ h1{
   font-size: 60px;
 }
 #mainContainer{
-  margin:80px
+  margin:120px
 }
 #containerLogin{
   max-width: 450px;
+}
+.logo {
+  height: 3.5em;
+  width: 14em;
+  padding: 0px;
+  will-change: filter;
+  transition: filter 300ms;
+  border-radius: 5px;
+  margin: 0px;
+}
+
+#itemDonate{
+  border-radius: 20px;
+  background-color: rgb(255, 196, 0);
+  color: black;
+  font-weight: bolder;
+  font-size: 15px;
+  
+}
+#itemDonate:hover{
+  background-color: rgb(255, 223, 117);
+}
+#itemLogin{
+  border-radius: 20px;
+  color: black;
+  font-weight: bolder;
+  font-size: 15px;
 }
