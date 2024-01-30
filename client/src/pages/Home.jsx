@@ -3,7 +3,7 @@ import Map from '../components/Map';
 const Home = () => {
 
   return (
-    <main>
+    <main id='mainContainer'>
       <div className="flex-row justify-center">
         <h1>welcome Google Policy Tracker</h1>
       </div>

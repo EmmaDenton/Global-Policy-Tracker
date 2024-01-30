@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 const Navbar = () => {
   const currentPage = useLocation().pathname;
   return (
-    <div class="ui fixed inverted menu">
+    <div class="ui fixed inverted menu" >
       <div class="ui container">
         <a class="header item">
           <Link

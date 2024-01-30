@@ -5,7 +5,10 @@ const LoginForm = () => {
   
 
   return (
-    <h1>loginnn</h1>
+    <div id='mainContainer'>
+      <h1>loginnn</h1>
+    </div>
+    
   );
 };
 

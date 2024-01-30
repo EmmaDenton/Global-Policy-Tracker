@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import SearchPolicy from './pages/SearchPolicy';
 import SavedPolicy from './pages/SavedPolicy';
 import { Outlet, Routes, Route } from 'react-router-dom';
-
+import './App.css'
 const client = new ApolloClient({
   uri: '/graphql',
   cache: new InMemoryCache(),

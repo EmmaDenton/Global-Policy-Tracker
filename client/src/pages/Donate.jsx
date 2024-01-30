@@ -5,7 +5,7 @@ const Donate = () => {
   
 
   return (
-    <div id='containerDonate'>
+    <div id='mainContainer' >
       <h1>akl;sjhf</h1>
       <h1>lkasjdhf</h1>
       <h1>lkajshd</h1>
