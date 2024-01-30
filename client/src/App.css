@@ -22,5 +22,8 @@ h1{
   font-size: 60px;
 }
 #mainContainer{
-  margin:60px
+  margin:80px
+}
+#containerLogin{
+  max-width: 450px;
 }
