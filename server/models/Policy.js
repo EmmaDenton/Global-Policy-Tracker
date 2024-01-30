@@ -1,4 +1,4 @@
-const { Schema } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 const policySchema = new Schema({
   legislation: {
@@ -29,4 +29,7 @@ const policySchema = new Schema({
   },
 });
 
-module.exports = policySchema;
+const Policy = model('Policy', policySchema);
+
+module.exports = Policy;
+

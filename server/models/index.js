@@ -1,4 +1,4 @@
 const User = require('./User');
 const Policy = require('./Policy');
 
-module.exports = { User };
+module.exports = { User, Policy };

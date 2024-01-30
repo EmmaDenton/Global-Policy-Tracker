@@ -10,8 +10,8 @@ const userSeed = require('./userSeed.json');
 db.once('open', async () => {
   await cleanDB('Policy', 'policies');
   await cleanDB('User', 'users');
-  await User.create(userSeed);
-  await Policy.create(policySeed);
+  await User.insertMany(userSeed);
+  await Policy.insertMany(policySeed);
   
   console.log('Policies seeded!');
   process.exit(0);
