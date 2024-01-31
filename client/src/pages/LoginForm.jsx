@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
+// import mapImg from '../assets/img/map.png';
 
 const LoginForm = (props) => {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -40,11 +41,11 @@ const LoginForm = (props) => {
   };
 
   return (
-    
-      <main class="ui middle aligned center aligned grid" id='mainContainer'>
-        <div >
-          <div class="column">
-            <h4 class="content" id='titleForm'>Login</h4>
+      
+      <main  id='mainContainer'>
+        <div id='containerMapForm'>
+          <div class="ui middle aligned center aligned grid">
+            
             <div class="ui large form" >
               {data ? (
                 <p>
@@ -52,30 +53,37 @@ const LoginForm = (props) => {
                   <Link to="/">back to the homepage.</Link>
                 </p>
               ) : (
-                <form onSubmit={handleFormSubmit} class="ui stacked segment">
-                  
+                <form onSubmit={handleFormSubmit} class="inline field" >
+                  <p>Email Address</p>
                   <input
-                    placeholder="Your email"
+                    placeholder="Email address"
                     name="email"
                     type="email"
                     value={formState.email}
                     onChange={handleChange}
                   />
+                
+                  <form onSubmit={handleFormSubmit} class="inline field" ></form>
+                  <p id='passwordP'>Password</p>
                   <input
-                    placeholder="******"
+                    placeholder="Example password"
                     name="password"
                     type="password"
                     value={formState.password}
                     onChange={handleChange}
                   />
-                  <button
-                    class="ui fluid large teal submit button"
+                  <div class="ui two column centered grid">
+                    <button
+                    class="ui fluid  large submit button "
                     id='submitButton'
                     style={{ cursor: 'pointer' }}
                     type="submit"
+                    
                   >
-                    Submit
+                    Log in
                   </button>
+                  </div>
+                  
                 </form>
                 
               )}
@@ -84,8 +92,8 @@ const LoginForm = (props) => {
                   {error.message}
                 </div>
               )}
-              <div class="ui message">
-                New to us? <Link to="/signup">SignUp!</Link>
+              <div  class="ui two column centered grid" >
+                Don't have an account <Link to="/signup">Sign Up!</Link>
               </div>
             </div>
           </div>

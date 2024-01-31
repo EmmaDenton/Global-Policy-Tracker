@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../assets/img/global.png';
+import logo from '../assets/img/globalLight.jpg';
 const Navbar = () => {
   const currentPage = useLocation().pathname;
   return (
-    <div class="ui orange fixed inverted menu" >
-      <div class="ui container">
-        <a class="header item">
+    <div class="ui orange inverted menu" id='orange' >
+      <div class="ui container"id='navBar'>
+        <a class="header item" id='linkGlobal'>
           <Link
             to="/"
             className={currentPage === '/Home' ? 'nav-link active' : 'nav-link'} 
