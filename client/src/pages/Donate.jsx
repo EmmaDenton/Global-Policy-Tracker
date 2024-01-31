@@ -17,9 +17,15 @@ const Donate = () => {
           <label for="amount" class="ui label">AUD</label>
         </div>
       </div>
+      <div class="field">
+        <div class="ui right labeled input">
+          <input type="text" id="amount" name="email" placeholder="Email address"/>
+          
+        </div>
+      </div>
       <div id='containerCardForm'>
         <div class="two fields" id='containerCard'>
-          <img src={logoCard} alt="logo" class='logoCard' />
+          <img src={logoCard} alt="cardImg" class='logoCard' />
           <p id='cardPa'>Credict or debit</p>
         </div>
         <div class="two fields">
