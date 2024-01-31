@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
+import Auth from '../utils/auth';
 // import mapImg from '../assets/img/map.png';
 
 const LoginForm = (props) => {
@@ -88,7 +89,8 @@ const LoginForm = (props) => {
                 
               )}
               {error && (
-                <div class="ui error message">
+                <div className="my-3 p-3 bg-danger text-white">
+                {/* <div class="ui error message"> */}
                   {error.message}
                 </div>
               )}

@@ -92,10 +92,13 @@ const SignupForm = () => {
             )}
 
             {error && (
-              <div class="ui error message">
+              <div className="my-3 p-3 bg-danger text-white">
+                {/* edit */}
+              {/* <div class="ui error message"> */}
                 {error.message}
               </div>
             )}
+            
             <div  class="ui two column centered grid" >
                 Already have an account <Link to="/login">Log in</Link>
             </div>
