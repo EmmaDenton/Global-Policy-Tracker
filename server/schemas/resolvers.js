@@ -1,5 +1,6 @@
 const { signToken, AuthenticationError } = require('../utils/auth');
 const User = require('../models/User');
+const Policy = require('../models/Policy');
 const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 
 const resolvers = {
@@ -35,7 +36,20 @@ const resolvers = {
 
       return { session: session.id };
     },
-
+    searchPolicies: async (_,  input ) => {
+      try { 
+        console.log(legislation)
+        let query = {};
+        if (input.policyInput.legislation) query.legislation = { $regex: input.policyInput.legislation, $options: "i" };
+        // if (countryCode) query.countryCode = countryCode;
+        // if (topic) query.topic = topic;
+        // if (status) query.status = status;
+        return await Policy.find(query);
+      } catch (error) {
+        console.error(error);
+        throw new Error('Error fetching policies');
+      }
+    },
   },
   Mutation: {
     login: async (parent, { email, password }) => {
