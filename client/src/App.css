@@ -143,3 +143,7 @@ width: 50px;
   font-size: 15px;
   font-weight: bolder;
 }
+#donateError{
+  padding-top: 30px;
+  text-align: center;
+}

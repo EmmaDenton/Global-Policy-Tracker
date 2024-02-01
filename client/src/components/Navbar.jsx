@@ -2,6 +2,12 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/img/globalLight.jpg';
 import Auth from '../utils/auth';
+import { useEffect } from 'react';
+import { loadStripe } from '@stripe/stripe-js';
+import { useLazyQuery } from '@apollo/client';
+import { QUERY_CHECKOUT } from '../utils/queries';
+
+const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Navbar = () => {
   const currentPage = useLocation().pathname;
@@ -9,6 +15,22 @@ const Navbar = () => {
     event.preventDefault();
     Auth.logout();
   };
+
+  const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
+
+  useEffect(() => {
+    if (data) {
+      stripePromise.then((res) => {
+        res.redirectToCheckout({ sessionId: data.checkout.session });
+      });
+    }
+  }, [data]);
+
+  
+  function submitCheckout() {
+    getCheckout();
+  }
+
   return (
     <div class="ui orange inverted menu" id='orange' >
       <div class="ui container"id='navBar'>
@@ -23,13 +45,13 @@ const Navbar = () => {
 
         <div class="right menu">
           <a class="item" id='donateLink'>
-            <Link
-            to="/donate"
-            //edit className
-            className={currentPage === '/Donate' ? 'nav-link active' : 'nav-link'} class="ui primary button" id='itemDonate'
-            >
-            Donate
-            </Link>
+          <div>
+            {Auth.loggedIn() ? (
+              <button onClick={submitCheckout}>Donate</button>
+            ) : (
+              <h1 id='donateError'>Log in to Donate us! 😊</h1>
+            )}
+          </div>
           </a>
           
           <div>
