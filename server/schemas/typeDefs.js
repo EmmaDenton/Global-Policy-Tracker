@@ -9,7 +9,7 @@ const typeDefs = gql`
 
   type Policy {
     legislation: String
-    countryCode: [String]
+    countryCode: String
     topic: String
     status: String
     description: String
@@ -26,6 +26,7 @@ const typeDefs = gql`
     me: User
     user(_id: ID!): User
     checkout: Checkout
+    searchPolicies(policyInput: PolicyInput): [Policy]
   }
 
   type Checkout {
@@ -39,7 +40,7 @@ const typeDefs = gql`
 
   input PolicyInput {
     legislation: String
-    countryCode: [String]
+    countryCode: String
     topic: String
     status: String
     description: String
