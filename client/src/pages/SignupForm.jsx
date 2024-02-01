@@ -39,10 +39,10 @@ const SignupForm = () => {
   };
 
   return (
-    <main class="ui middle aligned center aligned grid" id="mainContainer">
-      <div>
-        <div class="column">
-          <h4 class="content" id='titleForm'>Sign Up</h4>
+    <main  id="mainContainer">
+      <div id='containerMapForm'>
+        <div class="ui middle aligned center aligned grid">
+          
           <div class="ui large form" >
             {data ? (
               <p>
@@ -50,43 +50,58 @@ const SignupForm = () => {
                 <Link to="/">back to the homepage.</Link>
               </p>
             ) : (
-              <form onSubmit={handleFormSubmit} class="ui stacked segment">
+              <form onSubmit={handleFormSubmit} class="inline field">
+                <p id='nameSign'>Full name</p>
                 <input
-                  placeholder="Your username"
+                  placeholder="Example Full Name"
                   name="username"
                   type="text"
                   value={formState.name}
                   onChange={handleChange}
                 />
+              <form onSubmit={handleFormSubmit} class="inline field"></form>
+                <p id='emailSign'>Email Address</p>
                 <input
-                  placeholder="Your email"
+                  placeholder="Email address"
                   name="email"
                   type="email"
                   value={formState.email}
                   onChange={handleChange}
                 />
+              <form onSubmit={handleFormSubmit} class="inline field"></form>
+                <p id='passwordSign'>Password</p>
                 <input
-                  placeholder="******"
+                  placeholder="Example password"
                   name="password"
                   type="password"
                   value={formState.password}
                   onChange={handleChange}
                 />
-                <button
+                <div class="ui two column centered grid">
+                  <button
                   class="ui fluid large teal submit button"
                   style={{ cursor: 'pointer' }}
                   type="submit"
-                >
-                  Submit
-                </button>
+                  id='submitButton'
+                  >
+                    Sing up
+                  </button>
+                </div>
+                
               </form>
             )}
 
             {error && (
-              <div class="ui error message">
+              <div className="my-3 p-3 bg-danger text-white">
+                {/* edit */}
+              {/* <div class="ui error message"> */}
                 {error.message}
               </div>
             )}
+            
+            <div  class="ui two column centered grid" >
+                Already have an account <Link to="/login">Log in</Link>
+            </div>
           </div>
         </div>
       </div>
