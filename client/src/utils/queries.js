@@ -19,16 +19,15 @@ export const QUERY_CHECKOUT = gql`
 
 
 export const SEARCH_POLICIES = gql`
-query searchPolicies ($policyInput: PolicyInput) 
-{
-  searchPolicies (policyInput: $policyInput) {
-    legislation
-    countryCode
-    status
-    topic
-    description
-    lastUpdated
-    dateCreated
+  query searchPolicies($policyInput: PolicyInput) {
+    searchPolicies(policyInput: $policyInput) {
+      legislation
+      countryCode
+      topic
+      status
+      description
+      lastUpdated
+      dateCreated
+    }
   }
-} 
 `;

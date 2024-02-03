@@ -36,14 +36,14 @@ const resolvers = {
 
       return { session: session.id };
     },
-    searchPolicies: async (_,  input ) => {
+    searchPolicies: async (_,  { policyInput } ) => {
       try { 
-        console.log(legislation)
+        console.log(policyInput.legislation);
         let query = {};
-        if (input.policyInput.legislation) query.legislation = { $regex: input.policyInput.legislation, $options: "i" };
-        // if (countryCode) query.countryCode = countryCode;
-        // if (topic) query.topic = topic;
-        // if (status) query.status = status;
+        if (policyInput.legislation) query.legislation = { $regex: policyInput.legislation, $options: "i" };
+        if (policyInput.countryCode) query.countryCode = { $regex: policyInput.countryCode, $options: "i" };
+        if (policyInput.topic) query.topic = { $regex: policyInput.topic, $options: "i" };
+        if (policyInput.status) query.status = { $regex: policyInput.status, $options: "i" };
         return await Policy.find(query);
       } catch (error) {
         console.error(error);

@@ -11,17 +11,21 @@ function Home() {
   const [selectedStatus, setSelectedStatus] = useState('');
 
   const [searchPolicies, { data, loading, error }] = useLazyQuery(SEARCH_POLICIES);
-
-  useEffect(() => {
-    if (data) {
-      console.log('Search results:', data);
-    }
-  }, [data]);
-
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    searchPolicies({ variables: { policyInput: {legislation: searchTerm, countryCode: selectedCountry, topic: selectedTopic, status: selectedStatus }} });
+    searchPolicies({
+      variables: {
+        policyInput: { 
+          legislation: searchTerm,
+          countryCode: selectedCountry,
+          topic: selectedTopic,
+          status: selectedStatus,
+        }
+      }
+    });
   };
+
+  const searchedPolicies = data?.searchPolicies || [];
 
   return (
     <main id='mainContainer2'>
@@ -56,7 +60,7 @@ function Home() {
           </select>
           <button onClick={handleFormSubmit}>Submit</button>
       </div>
-      {/* {searchedPolicys.map((policy) => {
+      {searchedPolicies.map((policy) => {
             return (
       <div>
         <div className='legislation'>{policy.legislation}</div>
@@ -67,7 +71,7 @@ function Home() {
         <div>Supporting Documents</div>
         <div className='Links'>{policy.links}</div>
       </div>
-       )})}; */}
+       )})};
       </div>
     </main>
   );
