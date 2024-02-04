@@ -15,10 +15,48 @@ export default function Map() {
 
     map.current = new maptilersdk.Map({
       container: mapContainer.current,
-      style: maptilersdk.MapStyle.DATAVIZ.DARK,
+      style: maptilersdk.MapStyle.DATAVIZ.LIGHT,
       center: [13.39, 52.51],
       zoom: 2
     });
+
+    // map.current.on('load', function() {
+    //   map.addSource('statesData', {
+    //     type: 'vector',
+    //     url: `https://api.maptiler.com/tiles/countries/tiles.json`
+    //   });
+    // });
+
+    // map.addLayer(
+    //   {
+    //     'id': 'countries',
+    //     'source': 'statesData',
+    //     'source-layer': 'administrative',
+    //     'type': 'fill',
+    //     'paint': {
+    //         'fill-color': '#6B7C93',
+    //         'fill-opacity': 1,
+    //         'fill-outline-color': '#000'
+    //     }
+    //   },
+    //   firstSymbolId
+    // );
+
+    // map.addLayer(
+    //   {
+    //     'id': 'countries',
+    //     'source': 'statesData',
+    //     'source-layer': 'administrative',
+    //     'type': 'fill',
+    //     'filter': ['==', 'level', 0],
+    //     'paint': {
+    //         'fill-color': '#6B7C93',
+    //         'fill-opacity': 1,
+    //         'fill-outline-color': '#000'
+    //     }
+    //   },
+    //   firstSymbolId
+    // );
 
   }, [tokyo.lng, tokyo.lat, zoom]);
 

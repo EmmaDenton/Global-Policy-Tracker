@@ -32,19 +32,22 @@ const Navbar = () => {
   }
 
   return (
-    <div class="ui orange inverted menu" id='orange' >
-      <div class="ui container"id='navBar'>
-        <a class="header item" id='linkGlobal'>
+    <div className="ui orange inverted menu" id='orange' >
+      <div className="ui container"id='navBar'>
+        <a className="header item" id='linkGlobal'>
           <Link
             to="/"
             //edit className
             className={currentPage === '/Home' ? 'nav-link active' : 'nav-link'} 
-            ><img src={logo} alt="logo" class='logo' />
+            ><img src={logo} alt="logo" className='logo' />
             </Link>
         </a>
 
-        <div class="right menu">
-          <a class="item" id='donateLink'>
+        <div className="right menu">
+        {Auth.loggedIn() && (
+          <Link to="/saved">My Saved Policies</Link>
+          )}
+          <a className="item" id='donateLink'>
           <div>
             {Auth.loggedIn() ? (
               <button onClick={submitCheckout}>Donate</button>
@@ -58,7 +61,7 @@ const Navbar = () => {
           {Auth.loggedIn() ? (
             <>
               <span id='userName'>Hey there, {Auth.getProfile().data.username}!</span>
-              <button class="ui button" id='loggedIn' onClick={logout}>
+              <button className="ui button" id='loggedIn' onClick={logout}>
                 Logout
               </button>
             </>
