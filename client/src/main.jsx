@@ -3,7 +3,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import App from './App.jsx'
-import SearchPolicy from './pages/SearchPolicy'
 import SavedPolicy from './pages/SavedPolicy'
 import Home from './pages/Home';
 import Donate from './pages/Donate.jsx';
@@ -32,10 +31,6 @@ const router = createBrowserRouter([
       {
         path: '/saved',
         element: <SavedPolicy />
-      },
-      {
-        path: '/search',
-        element: <SearchPolicy />
       },
       {
         path: '/Donate',

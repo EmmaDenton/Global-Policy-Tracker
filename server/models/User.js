@@ -20,6 +20,10 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
+    starredPolicies: [{
+      type: Schema.Types.ObjectId,
+      ref: 'Policy', // Assumes your Policy model is named 'Policy'
+    }],
   },
   // set this to use virtual below
   {
