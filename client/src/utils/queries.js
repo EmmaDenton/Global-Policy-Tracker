@@ -30,6 +30,21 @@ query getAllPolicies {
 }
 `;
 
+export const GET_POLICIES_BY_COUNTRY = gql`
+  query GetPoliciesByCountry($countryCode: String!) {
+    policies(countryCode: $countryCode) {
+      _id
+      legislation
+      countryCode
+      topic
+      status
+      description
+      lastUpdated
+      dateCreated
+    }
+  }
+`;
+
 export const QUERY_CHECKOUT = gql`
   query getCheckout{
     checkout{

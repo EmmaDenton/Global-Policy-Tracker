@@ -1,7 +1,7 @@
 
 import { useLazyQuery, useMutation } from '@apollo/client';
 import Map from '../components/Map';
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { SEARCH_POLICIES, STAR_POLICY, UNSTAR_POLICY } from '../utils/queries';
 
 function Home() {
@@ -9,6 +9,7 @@ function Home() {
   const [selectedCountry, setSelectedCountry] = useState('');
   const [selectedTopic, setSelectedTopic] = useState('');
   const [selectedStatus, setSelectedStatus] = useState('');
+
 
   const [starPolicy] = useMutation(STAR_POLICY);
   const [unstarPolicy] = useMutation(UNSTAR_POLICY);
@@ -31,19 +32,6 @@ function Home() {
     }).catch(err => console.error(err));
   };
 
-// const handleMapClick = (event) => { 
-// searchPolicies({
-//       variables: {
-//         policyInput: { 
-//           legislation: searchTerm,
-//           countryCode: selectedCountry,
-//           topic: selectedTopic,
-//           status: selectedStatus,
-//         }
-//       }
-//     });
-
-// }
 
   const [searchPolicies, { data, loading, error }] = useLazyQuery(SEARCH_POLICIES);
   const handleFormSubmit = (event) => {
@@ -62,12 +50,30 @@ function Home() {
 
   const searchedPolicies = data?.searchPolicies || [];
 
+
+//Map click handler
+
+  useEffect(() => {
+    if (selectedCountry) {
+      searchPolicies({
+        variables: {
+          policyInput: {
+            countryCode: selectedCountry,
+            legislation: searchTerm,
+            topic: selectedTopic,
+            status: selectedStatus,
+          },
+        },
+      });
+    }
+  }, [selectedCountry, searchPolicies, searchTerm, selectedTopic, selectedStatus]);
+
   return (
     <main id='mainContainer2'>
       <div className="flex-row justify-center">
       </div>
       <div>
-      <Map/>
+      <Map setSelectedCountry={setSelectedCountry}/>
       <div>
       <input
             type="text"

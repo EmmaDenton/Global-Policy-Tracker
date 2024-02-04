@@ -1,14 +1,42 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState, useCallback } from 'react';
 import * as maptilersdk from '@maptiler/sdk';
 import "@maptiler/sdk/dist/maptiler-sdk.css";
  import './map.css';
 
-export default function Map() {
+
+ async function getCountryCode(longitude, latitude) {
+  const apiKey = 'Mvvrk72TkUzaRcxItiWZ'; // Replace with your actual MapTiler API key
+  const url = `https://api.maptiler.com/geocoding/${longitude},${latitude}.json?key=${apiKey}`;
+
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    // Extracting country code from the response. Adjust the path as needed based on the response structure.
+    const countryCode = data.features[0].properties.country_code;
+    return countryCode.toUpperCase(); // Ensure the country code is in uppercase as commonly expected
+  } catch (error) {
+    console.error("Failed to fetch country code:", error);
+    return null; // Handle errors appropriately in your app
+  }
+}
+
+export default function Map({ setSelectedCountry }) {
   const mapContainer = useRef(null);
   const map = useRef(null);
-  const tokyo = { lng: 139.753, lat: 35.6844 };
-  const [zoom] = useState(14);
-  maptilersdk.config.apiKey = 'dMbk65SQVJyXsUyHf7SS';
+  const [zoom] = useState(2); 
+  
+  maptilersdk.config.apiKey = 'Mvvrk72TkUzaRcxItiWZ';
+
+  const handleMapClick = useCallback(async (event) => {
+    const longitude = event.lngLat.lng;
+    const latitude = event.lngLat.lat;
+    const countryCode = await getCountryCode(longitude, latitude);
+    
+    if (countryCode) {
+
+      setTimeout(() => setSelectedCountry(countryCode), 0);
+    }
+  }, [setSelectedCountry]);
 
   useEffect(() => {
     if (map.current) return; // stops map from intializing more than once
@@ -20,45 +48,14 @@ export default function Map() {
       zoom: 2
     });
 
-    // map.current.on('load', function() {
-    //   map.addSource('statesData', {
-    //     type: 'vector',
-    //     url: `https://api.maptiler.com/tiles/countries/tiles.json`
-    //   });
-    // });
+    map.current.on('click', handleMapClick);
 
-    // map.addLayer(
-    //   {
-    //     'id': 'countries',
-    //     'source': 'statesData',
-    //     'source-layer': 'administrative',
-    //     'type': 'fill',
-    //     'paint': {
-    //         'fill-color': '#6B7C93',
-    //         'fill-opacity': 1,
-    //         'fill-outline-color': '#000'
-    //     }
-    //   },
-    //   firstSymbolId
-    // );
-
-    // map.addLayer(
-    //   {
-    //     'id': 'countries',
-    //     'source': 'statesData',
-    //     'source-layer': 'administrative',
-    //     'type': 'fill',
-    //     'filter': ['==', 'level', 0],
-    //     'paint': {
-    //         'fill-color': '#6B7C93',
-    //         'fill-opacity': 1,
-    //         'fill-outline-color': '#000'
-    //     }
-    //   },
-    //   firstSymbolId
-    // );
-
-  }, [tokyo.lng, tokyo.lat, zoom]);
+    return () => {
+      if (map.current) {
+        map.current.off('click', handleMapClick);
+      }
+    };
+  }, [zoom, handleMapClick]);
 
   return (
     <div className="map-wrap">
