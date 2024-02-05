@@ -48,46 +48,29 @@ const Navbar = () => {
           <Link to="/saved">My Saved Policies</Link>
           )}
           <a className="item" id='donateLink'>
+            <div>
+              <button id='itemDonate' onClick={submitCheckout}>Donate</button>
+            </div>
+          </a>
           <div>
             {Auth.loggedIn() ? (
-              <button onClick={submitCheckout}>Donate</button>
+              <>
+                <span id='userName'>Hey there, {Auth.getProfile().data.username}!</span>
+                <button className="ui button" id='loggedIn' onClick={logout}>
+                  Logout
+                </button>
+              </>
             ) : (
-              <h1 id='donateError'>Log in to Donate us! 😊</h1>
+              <>
+                <Link
+              to="/login"
+              className={currentPage === '/LoginForm' ? 'nav-link active' : 'nav-link'} class="item" id='itemLogin'
+              >
+              Log in
+              </Link>
+              </>
             )}
           </div>
-          </a>
-          
-          <div>
-          {Auth.loggedIn() ? (
-            <>
-              <span id='userName'>Hey there, {Auth.getProfile().data.username}!</span>
-              <button className="ui button" id='loggedIn' onClick={logout}>
-                Logout
-              </button>
-            </>
-          ) : (
-            <>
-              <Link
-            to="/login"
-            className={currentPage === '/LoginForm' ? 'nav-link active' : 'nav-link'} class="item" id='itemLogin'
-            >
-            Log in
-            </Link>
-            </>
-          )}
-          </div>
-
-          {/* <div>
-            <a class="item" id='loginLink'>
-            <Link
-            to="/login"
-            className={currentPage === '/LoginForm' ? 'nav-link active' : 'nav-link'} class="item" id='itemLogin'
-            >
-            Log in
-            </Link>
-            </a>
-          </div> */}
-
         </div>
       </div>
     </div>

@@ -63,8 +63,7 @@ h1{
   background-color: rgb(255, 196, 0);
   color: black;
   font-weight: bolder;
-  
-  
+  padding: 10px;
 }
 #itemDonate:hover{
   box-shadow: white 0px 4px 12px;
