@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import App from './App.jsx'
 import SavedPolicy from './pages/SavedPolicy'
 import Home from './pages/Home';
-import Donate from './pages/Donate.jsx';
 import SignupForm from './pages/SignupForm.jsx';
 import LoginForm from './pages/LoginForm.jsx';
 import ErrorPage from './pages/ErrorPage';
@@ -32,10 +31,6 @@ const router = createBrowserRouter([
         path: '/saved',
         element: <SavedPolicy />
       },
-      {
-        path: '/Donate',
-        element: < Donate/>
-      }
     ]
   }
 ])
