@@ -1,7 +1,7 @@
 [
     {
       "legislation":"Governance",
-      "countryCode":"AUD",
+      "countryCode":"AU",
       "topic":"AI",
       "status":"Implemented",
       "description":"Personal Data Protection Commission (PDPC) & IDMA published AIGF in 2020",
@@ -10,7 +10,7 @@
     },
     {
       "legislation":"Blueprint for an AI Bill of Rights",
-      "countryCode":"USD",
+      "countryCode":"US",
       "topic":"Competition",
       "status":"Passed",
       "description":"WIll go into effect May 2023.",
