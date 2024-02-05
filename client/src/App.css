@@ -113,6 +113,7 @@ h1{
 margin-bottom: 10px;
 background: linear-gradient(90deg, rgba(0,212,255,1) 30%, rgba(9,9,121,1) 80%);
 }
+
 .logoCard{
 height: 40px;
 width: 50px;
@@ -146,4 +147,68 @@ width: 50px;
 #donateError{
   padding-top: 30px;
   text-align: center;
+}
+
+#mainContainer2{
+  display: flex;
+  justify-content: center;
+  margin-top:30px;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-size: cover;
+  border: 3px solid #CCCCCC;
+  border-radius: 8px; 
+}
+
+.resultsCard {
+  padding-top: 10px;
+
+}
+
+.legislation {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.topic {
+  font-size: 18px;
+}
+
+.status {
+  background-color: #B8F8D5;
+  border-radius: 15px;
+  padding: 0px 10px 0px  10px;
+  font-size: 14px;
+  position: relative;
+  display: flex;
+  width: 10%;
+  margin-right: 0%;
+}
+
+.lastUpdated {
+  color: #CCCCCC;
+  font-size: 14px;
+}
+
+.Description {
+  font-size: 14px;
+}
+
+.supportingDocumentsTitle {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.Links {
+  font-size: 14px;
+}
+
+.formInput {
+  width: 25vw;
+}
+
+.starButton {
+  color:rgb(255, 196, 0)
 }

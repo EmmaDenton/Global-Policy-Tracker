@@ -9,17 +9,30 @@ function Home() {
   const [selectedCountry, setSelectedCountry] = useState('');
   const [selectedTopic, setSelectedTopic] = useState('');
   const [selectedStatus, setSelectedStatus] = useState('');
+  const [starredPolicyIds, setStarredPolicyIds] = useState(new Set());
+  const [countriesWithPolicies, setCountriesWithPolicies] = useState(new Set());
 
+
+  const [searchPolicies, { data, loading, error }] = useLazyQuery(SEARCH_POLICIES, {
+    fetchPolicy: "cache-and-network"
+  });
 
   const [starPolicy] = useMutation(STAR_POLICY);
   const [unstarPolicy] = useMutation(UNSTAR_POLICY);
+
+// Load all policies on page load
+  useEffect(() => {
+    searchPolicies();
+  }, [searchPolicies]);
 
   // Function to star a policy
   const handleStarPolicy = (policyId) => {
     console.log(policyId)
     starPolicy({
       variables: { policyId },
-      refetchQueries: [{ query: SEARCH_POLICIES }]
+      onCompleted: (data) => {
+        setStarredPolicyIds(prev => new Set(prev).add(policyId));
+      }
     }).catch(err => console.error(err));
   };
 
@@ -28,96 +41,98 @@ function Home() {
     console.log(policyId)
     unstarPolicy({
       variables: { policyId },
-      refetchQueries: [{ query: SEARCH_POLICIES }]
+      onCompleted: (data) => {
+        setStarredPolicyIds(prev => {
+          const newIds = new Set(prev);
+          newIds.delete(policyId);
+          return newIds;
+        });
+      }
     }).catch(err => console.error(err));
   };
 
-
-  const [searchPolicies, { data, loading, error }] = useLazyQuery(SEARCH_POLICIES);
-  const handleFormSubmit = (event) => {
-    event.preventDefault();
-    searchPolicies({ 
+  const handleSearch = useCallback(({ countryCode, legislation, topic, status }) => {
+    searchPolicies({
       variables: {
-        policyInput: { 
-          legislation: searchTerm,
-          countryCode: selectedCountry,
-          topic: selectedTopic,
-          status: selectedStatus,
-        }
-      }
+        policyInput: {
+          countryCode: countryCode || selectedCountry,
+          legislation: legislation || searchTerm,
+          topic: topic || selectedTopic,
+          status: status || selectedStatus,
+        },
+      },
     });
-  };
-
+  }, [searchPolicies, selectedCountry, searchTerm, selectedTopic, selectedStatus]);
   const searchedPolicies = data?.searchPolicies || [];
 
 
 //Map click handler
+useEffect(() => {
+  if (selectedCountry) {
+    handleSearch({ countryCode: selectedCountry });
+  }
+}, [selectedCountry, handleSearch]);
 
-  useEffect(() => {
-    if (selectedCountry) {
-      searchPolicies({
-        variables: {
-          policyInput: {
-            countryCode: selectedCountry,
-            legislation: searchTerm,
-            topic: selectedTopic,
-            status: selectedStatus,
-          },
-        },
-      });
-    }
-  }, [selectedCountry, searchPolicies, searchTerm, selectedTopic, selectedStatus]);
-
+//Handle search feature
+const handleFormSubmit = (event) => {
+  event.preventDefault();
+  handleSearch({});
+};
   return (
     <main id='mainContainer2'>
-      <div className="flex-row justify-center">
-      </div>
       <div>
       <Map setSelectedCountry={setSelectedCountry}/>
-      <div>
+      <div className="ui right action left icon input">
+      <i className="search icon"></i>
       <input
             type="text"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             placeholder="Search"
+            className="ui action input formInput"
           />
-          <select class="ui fluid dropdown" value={selectedCountry} onChange={(e) => {setSelectedCountry(e.target.value); handleFormSubmit(e)}}>
-          <option value="">Country</option>
-            <option value="aus">Australia</option>
+          <div className="ui fluid search selection dropdown">
+          <select className="ui fluid search selection dropdown" value={selectedCountry} onChange={(e) => {setSelectedCountry(e.target.value); handleFormSubmit(e)}}>
+          <option className="item" value="">Country</option>
+            <option className="item" value="aus">Australia</option>
           </select>
-          <select class="ui fluid dropdown" value={selectedTopic} onChange={(e) => {setSelectedTopic(e.target.value); handleFormSubmit(e)}}>
+          </div>
+          <select className="ui fluid search selection dropdown" value={selectedTopic} onChange={(e) => {setSelectedTopic(e.target.value); handleFormSubmit(e)}}>
             <option value="">Topic</option>
             <option value="aI">AI</option>
             <option value="Competition">Competition</option>
             <option value="e-commerce">E-commerce</option>
             <option value="onlineSafety">Online Safety</option>
           </select>
-          <select class="ui fluid dropdown" value={selectedStatus} onChange={(e) => {setSelectedStatus(e.target.value); handleFormSubmit(e)}}>
+          <select className="ui basic floating dropdown button" value={selectedStatus} onChange={(e) => {setSelectedStatus(e.target.value); handleFormSubmit(e)}}>
           <option value="">Status</option>
             <option value="notYetDrafted">Not Yet Drafted</option>
             <option value="passed">Passed</option>
             <option value="implemented">Implemented</option>
             <option value="inProgress">In Progress</option>
           </select>
-          <button onClick={handleFormSubmit}>Submit</button>
+          <button className="ui button" onClick={handleFormSubmit}>Submit</button>
       </div>
       {searchedPolicies.map((policy) => {
+          const isStarred = starredPolicyIds.has(policy._id);
             return (
-      <div key={policy._id}>
+      <div className="resultsCard" key={policy._id}>
         <div className='legislation'>{policy.legislation}</div>
+        <div key={policy._id}>
+        {isStarred ? (
+        <i onClick={() => handleUnstarPolicy(policy._id)} className="star icon starButton"></i>
+      ) : (
+        <i onClick={() => handleStarPolicy(policy._id)} className="star outline icon starButton"></i>
+      )}
+          </div>
         <div className='topic'>{policy.topic}</div>
         <div className='status'>{policy.status}</div>
         <div className='lastUpdated'>{policy.lastUpdated}</div>
         <div className='Description'>{policy.description}</div>
-        <div>Supporting Documents</div>
+        <div className="supportingDocumentsTitle">Supporting Documents</div>
         <div className='Links'>{policy.links}</div>
-          <div key={policy._id}>
-            {/* Existing policy details */}
-            <button onClick={() => handleStarPolicy(policy._id)}>Star</button>
-            <button onClick={() => handleUnstarPolicy(policy._id)}>Unstar</button>
-          </div>
       </div>
-       )})};
+       )})}
       </div>
     </main>
   );
