@@ -211,3 +211,11 @@ width: 50px;
 .starButton {
   color:rgb(255, 196, 0)
 }
+
+.filledCountry{
+  color: green
+}
+
+.unfilledCountry{
+  color: green
+}

@@ -12,18 +12,31 @@ function Home() {
   const [starredPolicyIds, setStarredPolicyIds] = useState(new Set());
   const [countriesWithPolicies, setCountriesWithPolicies] = useState(new Set());
 
-
   const [searchPolicies, { data, loading, error }] = useLazyQuery(SEARCH_POLICIES, {
     fetchPolicy: "cache-and-network"
   });
 
+  const handleCountryClick = (countryCode) => {
+    setSelectedCountry(countryCode);
+    // You can also trigger a search directly here if needed
+    handleSearch({ countryCode });
+  };
+
+  useEffect(() => {
+    searchPolicies({
+      onCompleted: (data) => {
+        if (data?.searchPolicies) {
+          const uniqueCountries = new Set(data.searchPolicies.map(policy => policy.countryCode));
+          setCountriesWithPolicies(uniqueCountries);
+        }
+      }
+    });
+  }, [searchPolicies]);
+
+
+
   const [starPolicy] = useMutation(STAR_POLICY);
   const [unstarPolicy] = useMutation(UNSTAR_POLICY);
-
-// Load all policies on page load
-  useEffect(() => {
-    searchPolicies();
-  }, [searchPolicies]);
 
   // Function to star a policy
   const handleStarPolicy = (policyId) => {
@@ -66,13 +79,6 @@ function Home() {
   const searchedPolicies = data?.searchPolicies || [];
 
 
-//Map click handler
-useEffect(() => {
-  if (selectedCountry) {
-    handleSearch({ countryCode: selectedCountry });
-  }
-}, [selectedCountry, handleSearch]);
-
 //Handle search feature
 const handleFormSubmit = (event) => {
   event.preventDefault();
@@ -81,7 +87,7 @@ const handleFormSubmit = (event) => {
   return (
     <main id='mainContainer2'>
       <div>
-      <Map setSelectedCountry={setSelectedCountry}/>
+      <Map setSelectedCountry={setSelectedCountry} onCountryClick={handleCountryClick} countriesWithPolicies={Array.from(countriesWithPolicies)} />
       <div className="ui right action left icon input">
       <i className="search icon"></i>
       <input
