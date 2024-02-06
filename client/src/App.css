@@ -219,3 +219,19 @@ width: 50px;
 .unfilledCountry{
   color: green
 }
+
+#savedPolicies:hover{
+  transition: 0.3s;
+  color: rgba(9,9,121,1);
+  box-shadow: white 0px 4px 12px;
+}
+#savedPolicies{
+border-radius: 20px;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+  padding: 10px;
+  background-color: rgba(0,212,255,1);
+  border-radius: 3px;
+}
