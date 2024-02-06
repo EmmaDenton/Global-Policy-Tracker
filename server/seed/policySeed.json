@@ -1,20 +1,384 @@
 [
+  {
+    "legislation": "Privacy Legislation Amendment (Enforcement and Other Measures) Act 2022",
+    "country": "Australia",
+    "countryCode": "AU",
+    "topic": "Privacy",
+    "status": "Implemented",
+    "description": "Granted Royal Assent on 12 December 2022 and came into immediate effect.",
+    "lastUpdated": "28 Oct 2023",
+    "dateCreated": "13 Feb 2023"
+  },
     {
-      "legislation":"Governance",
-      "countryCode":"AU",
-      "topic":"AI",
-      "status":"Implemented",
-      "description":"Personal Data Protection Commission (PDPC) & IDMA published AIGF in 2020",
-      "lastUpdated":"Thurs, 25 Jan 2024",
-      "dateCreated":"Wed, 24 Jan 2024"
-    },
+    "legislation":"Online Safety Act 2021 (OSA)",
+    "country":"Australia",
+    "countryCode":"AU",
+    "topic":"Online safety",
+    "status":"Implemented",
+    "description":"Became effective on 23 January 2022, with a phased implementation across multiple stages.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"7 Aug 2023"
+  },
     {
-      "legislation":"Blueprint for an AI Bill of Rights",
-      "countryCode":"US",
-      "topic":"Competition",
-      "status":"Passed",
-      "description":"WIll go into effect May 2023.",
-      "lastUpdated":"Wed, 24 Jan 2024",
-      "dateCreated":"Tues, 23 Jan 2024"
-    }
+    "legislation":"Treasury Laws Amendment (More Competition, Better Prices) Bill 2022",
+    "country":"Australia",
+    "countryCode":"AU",
+    "topic":"Competition",
+    "status":"Implemented",
+    "description":"The new cybersecurity law's provisions, requiring stricter security measures, were officially adopted on 10 November 2022.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Fake News Eradication Promotion Plan",
+    "country":"Brazil",
+    "countryCode":"BR",
+    "topic":"Privacy",
+    "status":"Implemented",
+    "description":"This legislation consolidates more than 40 statutes related to personal data protection into a single framework and creates the national data protection authority (ANPD). It specifies the roles of data controllers, processors, and subjects, and categorizes various kinds of personal data.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Policy Measures for Securing Online Behavioural Information Used in Tailored Advertisements",
+    "country":"Canada (Quebec)",
+    "countryCode":"CA",
+    "topic":"Data governance",
+    "status":"Implemented",
+    "description":"The Quebec data protection act was updated on 22 September 2023, imposing more stringent data management and privacy requirements on businesses.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Measures for the Management of Generative Artificial Intelligence Services to regulate the use of generative artificial intelligence (AI)",
+    "country":"China",
+    "countryCode":"CN",
+    "topic":"Data goverance",
+    "status":"Implemented",
+    "description":"The CAC's guidelines, focusing on protecting personal information in mobile apps, went into effect on 1 January 2024.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Domestic Deep Synthesis Service Algorithm Filing List",
+    "country":"China",
+    "countryCode":"CN",
+    "topic":"AI",
+    "status":"Implemented",
+    "description":"Set to be enforced on 15 August 2023, the CAC's provisions on managing algorithmic recommendations in Internet Information Services aim at regulation.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Quebec Data Protection Act (projet de loi 64)",
+    "country":"China",
+    "countryCode":"CN",
+    "topic":"National security",
+    "status":"Implemented",
+    "description":"The revised Counterespionage Law, which came into effect on 1 July 2023, bolsters national security measures and data protection.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Implementing Regulation specifying the roles, rules and obligations under the European Common Criteria-based Cybersecurity Certification Scheme (EUCC)",
+    "country":"China",
+    "countryCode":"CN",
+    "topic":"Data governance",
+    "status":"Implemented",
+    "description":"New regulations for cross-border data transfers, tightening data security, were introduced by the Cyberspace Administration of China on 15 September 2023.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"7 Aug 2023"
+  },
+
+    {
+    "legislation":"Thailand Personal Data Protection Act (PDPA)",
+    "country":"India",
+    "countryCode":"IN",
+    "topic":"Content moderation",
+    "status":"Implemented",
+    "description":"The Central Consumer Protection Authority released guidelines on 30 November 2023 to combat unfair trade practices in e-commerce.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Guidelines for Prevention and Regulation of Dark Patterns",
+    "country":"Indonesia",
+    "countryCode":"ID",
+    "topic":"Online safety",
+    "status":"Implemented",
+    "description":"The Deputy Minister of Commerce introduced a new e-commerce regulation on 20 November 2023, aiming to safeguard consumers and promote fair trade.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Digital Markets Act (DMA)",
+    "country":"Ireland",
+    "countryCode":"IE",
+    "topic":"Competition",
+    "status":"Implemented",
+    "description":"The Competition (Amendment) Bill, introducing measures against anti-competitive practices in digital markets, was passed on 27 September 2023.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Personal Data Protection Decree",
+    "country":"Japan",
+    "countryCode":"JP",
+    "topic":"Privacy",
+    "status":"Implemented",
+    "description":"As of April 2022, the revised APPI has been expanded to include both private and public sectors. This revision has enhanced the rights of data subjects in terms of consent, along with the disclosure and deletion of their personal data. In the event of data breaches, businesses are now required to report such incidents to both the affected individuals and the Personal Information Protection Commission (PPC).",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Act on the Protection of Personal Information (APPI)",
+    "country":"Korea",
+    "countryCode":"KR",
+    "topic":"Privacy",
+    "status":"Implemented",
+    "description":"PIPA is often considered one of the most stringent privacy regulations, highlighting the importance of consent from data subjects. In March 2024, a forthcoming amendment will introduce the right to data portability and will allow data subjects to inquire about and decline automated decision-making processes.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"EU-US Data Privacy Framework",
+    "country":"Korea",
+    "countryCode":"KR",
+    "topic":"Misinformation",
+    "status":"Implemented",
+    "description":"The Korea Communications Commission (KCC) revealed on 18 September 2023 that it has implemented a rapid assessment mechanism as part of its Fake News Eradication Promotion Plan.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Online Safety (Miscellaneous Amendments) Act & Online Codes of Practice",
+    "country":"Singapore",
+    "countryCode":"SG",
+    "topic":"Privacy",
+    "status":"Implemented",
+    "description":"The PDPA establishes foundational protection standards for personal data across various sectors, guaranteeing the respect of individuals' data privacy rights.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Personal Data Protection Law (PDP Law)",
+    "country":"Singapore",
+    "countryCode":"SG",
+    "topic":"AI",
+    "status":"Implemented",
+    "description":"The Personal Data Protection Commission (PDPC) and the Info-communications Media Development Authority (IMDA) are tasked with enforcement, focusing on giving consumers control over their personal data.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"NY Bill prohibiting the distribution of AI-generated pornographic images without the individual's consent (S 01042/A 3596)",
+    "country":"Thailand",
+    "countryCode":"TH",
+    "topic":"Privacy",
+    "status":"Implemented",
+    "description":"The PDPA requires data controllers and processors to secure personal data, encompassing protections against data breaches.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"ICO Guidelines on responding to subject access requests (SARs)",
+    "country":"United Kingdom",
+    "countryCode":"UK",
+    "topic":"Online safety",
+    "status":"Implemented",
+    "description":"Became effective on 2 September 2020, providing a 12-month grace period for compliance and outlining standards for digital operations.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Implementation of Pillar Two in Finance (No. 2) Bill",
+    "country":"United Kingdom",
+    "countryCode":"UK",
+    "topic":"Employment",
+    "status":"Implemented",
+    "description":"On 24 May 2023, the Information Commissioner's Office (ICO) updated its guidelines on data protection impact assessments.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Law No. 2023-566 (Bill aimed at establishing a digital majority, combating online hate, age verification)",
+    "country":"United Kingdom",
+    "countryCode":"UK",
+    "topic":"Online safety",
+    "status":"Implemented",
+    "description":"The digital privacy provisions under part 5 of the Digital Economy Act were enforced on 31 January 2024.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"UK as qualifying state for the redress mechanism under Executive Order 14086",
+    "country":"United Kingdom",
+    "countryCode":"UK",
+    "topic":"Data",
+    "status":"Implemented",
+    "description":"The Data Protection (Adequacy Decisions) Regulations, facilitating streamlined data transfers outside the EU, were introduced on 12 October 2023.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Foreign Corrupt Practices Act (FCPA)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"AI",
+    "status":"Implemented",
+    "description":"The Cybersecurity Data Protection Act, aimed at strengthening the nation's cybersecurity infrastructure, was signed by the US President on 30 October 2023.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Sarbanes–Oxley Act of 2002",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Data",
+    "status":"Implemented",
+    "description":"Several countries were designated by the Attorney General on 12 October 2023 as providing adequate personal data protection, thus facilitating international data flows.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Lei Geral de Proteção de Dados (LGPD); General Data Protection Law (GDPL)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"Implemented",
+    "description":"The revised Counterespionage Law, which came into effect on 1 July 2023, bolsters national security measures and data protection.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Personal Information Protection Act (PIPA)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Online safety",
+    "status":"Implemented",
+    "description":"Discussions are underway regarding the reform of Section 230. On 18 May 2023, the United States Supreme Court ruled that the plaintiffs in both the Gonzalez and Taamneh cases did not present actionable claims, thereby affirming that the protections provided by Section 230 remain in effect.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Arkansas Social Media Safety Act (Act 689)",
+    "country":"US (Arkansas)",
+    "countryCode":"US",
+    "topic":"AI",
+    "status":"Implemented",
+    "description":"A Bill reintroduced on 28 November 2023 bans the sale of personal data without clear consent, highlighting the importance of consumer privacy protection.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"California Consumer Privacy Act (CCPA) (Assembly Bill No. 694 (AB 694))",
+    "country":"US (California)",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"Implemented",
+    "description":"Effective from 1 January 2023, amendments to the 2018 data protection act were made to cover provisions related to digital marketing practices.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Colorado Privacy Act",
+    "country":"US (Colorado)",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"Implemented",
+    "description":"Enacted on 1 January 2022, this clarified CPPA responsibilities and bolstered enforcement mechanisms.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Florida Protection of Minors on Social Media Platforms (SB 454)",
+    "country":"US (Florida)",
+    "countryCode":"US",
+    "topic":"Online safety",
+    "status":"In Progress",
+    "description":"The Bill for the Protection of Personal Information in Social Networks, introduced on 14 November 2023, aims to enforce stricter regulations on social media platforms.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Utah Social Media Regulation Act (H.B. 311 and S.B. 152)",
+    "country":"US (Utah)",
+    "countryCode":"US",
+    "topic":"Online safety",
+    "status":"In Progress",
+    "description":"Set to be implemented in March 2024, these laws incorporate provisions aimed at safeguarding digital identity and personal data.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Maine Data Privacy and Protection Act (LD 1977)",
+    "country":"US (Main)",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"In Progress",
+    "description":"On 25 May 2023, a bill was introduced in the legislature, seeking to impose more rigorous regulations on the collection and utilization of geolocation data.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Washington Ethical AI Bill (HB 1951)",
+    "country":"US (Washington)",
+    "countryCode":"US",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"House Bill 1951, introduced on 14 December 2023, proposes the strengthening of security protocols for network and information systems.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Electronic Surveillance Reform",
+    "country":"Australia",
+    "countryCode":"AU",
+    "topic":"Security",
+    "status":"Not Yet Drafted",
+    "description":"Throughout 2021 and 2022, consultations with diverse stakeholders were conducted to guide the creation of legislation for electronic surveillance reform.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"American Data Privacy and Protection Act (ADPPA)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"Not Yet Drafted",
+    "description":"To be confirmed whether the 117th Congress will consider the ADPPA draft legislation for discussion.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Global Artificial Intelligence (AI) Governance Initiative",
+    "country":"China",
+    "countryCode":"CN",
+    "topic":"AI",
+    "status":"Passed",
+    "description":"The Cyberspace Administration of China issued guidelines on 18 October 2023 to reinforce national data security and to grow the digital economy.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Guidelines for the Filing of Standard Contracts for the Transfer of Personal Information Abroad (First Edition)",
+    "country":"China",
+    "countryCode":"CN",
+    "topic":"Privacy",
+    "status":"Passed",
+    "description":"The Regulations on the Protection of Children's Personal Information Online, enhancing safeguards for minors, were promulgated on 20 September 2023.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"2022 Amendment of Telecommunications Business Act",
+    "country":"China",
+    "countryCode":"CN",
+    "topic":"AI/Algorithims",
+    "status":"Passed",
+    "description":"The Cyberspace Administration of China released new regulations for online data processing on 20 June 2023, with a focus on user consent and data security.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"15 Jul 2023"
+  }
   ]
+
