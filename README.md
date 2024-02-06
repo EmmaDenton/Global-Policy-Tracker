@@ -12,7 +12,16 @@ Users with an account will be able to save or “pin” policies. Allowing them 
 [Global Policy Tracker]()
 
 ## How does it look?
-
+Home Page
+![1111](https://github.com/EmmaDenton/Global-Policy-Tracker/assets/138730100/5fb3bea1-38a5-428d-ba20-a580c91d1b7f)
+Home Page
+![222](https://github.com/EmmaDenton/Global-Policy-Tracker/assets/138730100/36108d8c-7b68-4ed8-ae74-124aac502e62)
+Sign up Page
+![globalweb4](https://github.com/EmmaDenton/Global-Policy-Tracker/assets/138730100/b2bd7f8e-6c78-42a0-b736-ebd9466dbfd1)
+Login Page
+![globalweb3](https://github.com/EmmaDenton/Global-Policy-Tracker/assets/138730100/38230843-8a5d-4de5-9719-6994e41732e1)
+Donation Page
+![globalweb2](https://github.com/EmmaDenton/Global-Policy-Tracker/assets/138730100/c16687f5-c36e-46ad-803a-c43ada050c1b)
 
 ## CSS Styling
 
