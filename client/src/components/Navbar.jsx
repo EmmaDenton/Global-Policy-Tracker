@@ -45,7 +45,7 @@ const Navbar = () => {
 
         <div className="right menu">
         {Auth.loggedIn() && (
-          <Link to="/saved">My Saved Policies</Link>
+          <Link to="/saved" id='savedPolicies' class="item" >My Saved Policies</Link>
           )}
           <a className="item" id='donateLink'>
             <div>
