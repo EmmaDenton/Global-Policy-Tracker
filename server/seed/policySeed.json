@@ -379,6 +379,1119 @@
     "description":"The Cyberspace Administration of China released new regulations for online data processing on 20 June 2023, with a focus on user consent and data security.",
     "lastUpdated":"25 Jan 2024",
     "dateCreated":"15 Jul 2023"
+  },
+
+  {
+    "legislation":"Connecticut Personal Data Privacy and Online Monitoring Act (SB 6)",
+    "country":"US (Conneticut)",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"Implemented",
+    "description":"Effective from 1 July 2023, this applies to organizations managing personal data, requiring stricter compliance measures.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Delaware Personal Data Privacy Act (HB 154)",
+    "country":"US (Delaware)",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"Implemented",
+    "description":"As of 1 July 2023, data protection standards for personal information have been substantially updated to align with current technologies.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Utah Consumer Privacy Act (SB 227 - 2022)",
+    "country":"US (Utah)",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"Implemented",
+    "description":"This was put into effect on 1 January 2023.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Texas Passed Securing Children Online through Parental Empowerment (SCOPE) Act",
+    "country":"US (Texas)",
+    "countryCode":"US",
+    "topic":"AI",
+    "status":"Implemented",
+    "description":"After receiving royal assent, the Act focusing on digital identity verification and protection came into force on 13 June 2023.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"CAC Guiding Opinions on Further Strengthening the Reporting of Internet Infringement Information",
+    "country":"Vietnam",
+    "countryCode":"VN",
+    "topic":"Privacy",
+    "status":"Implemented",
+    "description":"Effective from 1 July 2023, Vietnam's Decree on Personal Data Protection was implemented, setting forth a detailed framework for data protection. Specifically, Article 24 of the Decree addresses the international transfer of personal data, mandating the consent of the individual concerned and the execution of a data protection impact assessment, which must be submitted to the Ministry of Public Security.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Privacy Act Review",
+    "country":"Australia",
+    "countryCode":"AU",
+    "topic":"Privacy",
+    "status":"In Progress",
+    "description":"The Government released a discussion paper on 28 September 2023 for the Privacy Act Review, inviting public submissions until 10 November 2023.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Copyright Enforcement Review",
+    "country":"Australia",
+    "countryCode":"AU",
+    "topic":"Copyright",
+    "status":"In Progress",
+    "description":"The Attorney General's Department initiated a consultation with a discussion paper on 5 March 2023, requiring responses by 31 March 2023.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Communications Legislation Amendment (Combatting Misinformation and Disinformation) Bill 2023",
+    "country":"Australia",
+    "countryCode":"AU",
+    "topic":"Content moderation",
+    "status":"In Progress",
+    "description":"The Australian Government has invited public input through a consultation open until 15 February 2024, aimed at addressing online harm via changes to communications legislation.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Trusted Digital Identity Bill 2021",
+    "country":"Australia",
+    "countryCode":"AU",
+    "topic":"Privacy",
+    "status":"In Progress",
+    "description":"The proposed Draft Bill aims to create a Trusted Digital Identity Framework to enhance security and convenience in digital identity verification.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Treasury Laws Amendment Bill 2024: Climate-related financial disclosure",
+    "country":"Australia",
+    "countryCode":"AU",
+    "topic":"Climate",
+    "status":"In Progress",
+    "description":"The Treasurer has recently unveiled a draft of new legislation targeting the regulation of digital platforms, with an emphasis on enhancing competition and consumer results.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Legal Framework for Artificial Intelligence (Bill No. 2338 of 2023)",
+    "country":"Brazil",
+    "countryCode":"BR",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"On 12 May 2023, the Brazilian Senate declared its intent to draft legislation focusing on digital platform accountability.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Artificial Intelligence and Data Act (AIDA)",
+    "country":"Canada",
+    "countryCode":"CA",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"The Artificial Intelligence and Data Protection bill, currently proposed, aims to mitigate concerns related to AI and safeguard individual data rights.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"C-27 Digital Charter Implementation Act 2022",
+    "country":"Canada",
+    "countryCode":"CA",
+    "topic":"Privacy",
+    "status":"In Progress",
+    "description":"On 3 February 2024, Canada's Privacy Commissioner (OPC) released its annual report, emphasizing the necessity for more robust privacy legislation and enforcement measures." ,
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"7 Aug 2023"
+  },
+      {
+    "legislation":"Personal Data Protection Act (PDPA)",
+    "country":"Canada",
+    "countryCode":"CA",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"The Canadian Minister of Innovation, Science, and Industry announced enhancements to the Consumer Privacy Protection Act on 7 December 2023, reinforcing data privacy regulations.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Lingang New Area Data Cross-border Flow Classification and Grading Management Measures (for Trial Implementation)",
+    "country":"China",
+    "countryCode":"CN",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"The International Data Economy Action Plan, initiated on 20 January 2024, aims to facilitate worldwide data exchange and collaboration.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Regulate artificial intelligence through copyright (Bill 1630)",
+    "country":"France",
+    "countryCode":"FR",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"The Bill that seeks to regulate online political advertising, establishing standards for transparency and accountability, was introduced on 12 September 2023.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Digital Data Protection Bill (DDP)",
+    "country":"India",
+    "countryCode":"IN",
+    "topic":"Privacy",
+    "status":"In Progress",
+    "description":"This supersedes the former Personal Data Protection Bill, incorporating strengthened measures for data privacy and security.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Amendment Rules, 2023",
+    "country":"India",
+    "countryCode":"IN",
+    "topic":"Content moderation",
+    "status":"In Progress",
+    "description":"In April 2023, the industry appealed to the Indian Government to review the proposed changes to the IT (Intermediary Guidelines & Digital Media Ethics Code) Rules, 2021.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Draft Broadcasting Services (Regulation) Bill",
+    "country":"India",
+    "countryCode":"IN",
+    "topic":"Content moderation",
+    "status":"In Progress",
+    "description":"The Ministry of Information Technology and Telecommunication released content moderation guidelines for social media companies on 9 December 2023.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Personal Information Protection Act (Bill No 2120331) Amendment",
+    "country":"Korea",
+    "countryCode":"KR",
+    "topic":"Privacy",
+    "status":"In Progress",
+    "description":"A bill regulating artificial intelligence and addressing its ethical implications was introduced to the Korean National Assembly on 27 February 2023.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Regulations on overseas transfer of personal information",
+    "country":"Korea",
+    "countryCode":"KR",
+    "topic":"Data",
+    "status":"In Progress",
+    "description":"Public feedback on the proposed digital communication standards is invited until 31 March 2024, during the consultation period on the draft regulations.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"7 Aug 2023"
+  },
+      {
+    "legislation":"Data Protection Bill 2023",
+    "country":"Malawi",
+    "countryCode":"MW",
+    "topic":"Data",
+    "status":"In Progress",
+    "description":"The Data Protection Bill 2023, which updates and strengthens the legal frameworks for data privacy, was enacted on 7 December 2023.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Customer and Product Data Bill",
+    "country":"New Zealand",
+    "countryCode":"NZ",
+    "topic":"Data",
+    "status":"In Progress",
+    "description":"This Bill is designed to allow customers to safely exchange their data among service providers, thus fostering better competition and innovation in services.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Digital Services Tax (DST) Bill",
+    "country":"New Zealand",
+    "countryCode":"NZ",
+    "topic":"Tax",
+    "status":"In Progress",
+    "description":"The Digital Services Tax (DST), introduced on 30 August 2023, focuses on large digital businesses to guarantee equitable tax practices.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Senate Bill 1846: Internet Transactions Act",
+    "country":"Phillippines",
+    "countryCode":"PH",
+    "topic":"E-commerce",
+    "status":"In Progress",
+    "description":"Presented to the Senate plenary on 7 February, this bill aims to regulate how digital platforms use personal data.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"House Bill (HB) No. 4122: VAT on Digital Services",
+    "country":"Phillippines",
+    "countryCode":"PH",
+    "topic":"Tax",
+    "status":"In Progress",
+    "description":"The House of Representatives approved a bill in November 2022 designed to regulate artificial intelligence, with an emphasis on ethical standards and transparency.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Voluntary Code of Conduct on the Responsible Development and Management of Advanced Generative AI Systems",
+    "country":"Spain",
+    "countryCode":"ES",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"The Spanish Ministry of Economic Affairs and Digital Transformation introduced regulations for digital service providers on 29 January 2024, with a focus on protecting consumer rights.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Artificial Intelligence (AI) Regulation Bill",
+    "country":"United Kingdom",
+    "countryCode":"UK",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"The proposal for the Artificial Intelligence Liability Directive, aimed at clarifying responsibility for AI-related harm, was made on 22 November 2023.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Digital Markets, Competition, and Consumer Bill (DMCC)",
+    "country":"United Kingdom",
+    "countryCode":"UK",
+    "topic":"Competition",
+    "status":"In Progress",
+    "description":"The Digital Markets, Competition and Consumer Bill will introduce measures to address the dominance in digital markets and safeguard consumers.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Data Protection and Digital Information (No.2) Bill",
+    "country":"United Kingdom",
+    "countryCode":"UK",
+    "topic":"Privacy",
+    "status":"In Progress",
+    "description":"This Bill proposes amendments to the UK Data Protection Reform Bill to better align with global data protection norms.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Media Bill",
+    "country":"United Kingdom",
+    "countryCode":"UK",
+    "topic":"Media",
+    "status":"In Progress",
+    "description":"The Government released a draft of the Online Advertising Program in March 2023, which aims at regulating the digital advertising industry.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Investigatory Powers (Reform) Bill",
+    "country":"United Kingdom",
+    "countryCode":"UK",
+    "topic":"National security",
+    "status":"In Progress",
+    "description":"After reviewing the Investigatory Powers Act, there are considerations for adjustments to improve privacy protections and oversight mechanisms.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Invest in Child Safety Act (HR 7134)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Online safety",
+    "status":"In Progress",
+    "description":"The Invest in Child Safety Act, introduced on 31 January 2024, seeks to boost funding for digital safety initiatives targeting children.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Artificial Intelligence Environmental Impacts Act of 2024 (HB 7197)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"The Artificial Intelligence Ethics and Standards Act, passed on 1 February 2024, sets forth ethical guidelines and standards for the use of AI.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"No AI Fake Replicas and Unauthorized Duplications (No AI FRAUD) Act",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"The No AI Fake Replicas and Deepfakes Act, enacted on 10 January 2024, aims to counteract the production and dissemination of AI-generated deepfakes.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"National Data Privacy Standards (S 3337)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Data",
+    "status":"In Progress",
+    "description":"A Bill introduced on 15 November 2023 aims to establish national AI standards and oversight, advocating for the responsible development and application of AI.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Disclosure obligation for websites and apps with links to the Chinese Communist Party (SB 3329)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"National security",
+    "status":"In Progress",
+    "description":"A Bill introducing a disclosure framework for algorithms used by digital platforms was tabled on 15 November 2023, designed to improve transparency and accountability.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Government Surveillance Reform Act of 2023 (S 3234)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"National security",
+    "status":"In Progress",
+    "description":"The Bill introduced on 7 November 2023 aims to implement reforms in digital service taxes, emphasizing fair taxation for digital businesses.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Artificial Intelligence (AI) Research, Innovation, and Accountability Act of 2023 (SB 3312)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"Members of the Senate Committee proposed a Bill on 15 November 2023 to protect the rights of digital content creators, aiming to enhance their protection and benefits.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Federal Artificial Intelligence Risk Management Act (SB 3205)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"The Federal Artificial Intelligence Act, established on 2 November 2023, creates a national framework for the governance and ethical utilization of AI.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"AI Labeling Act",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"Introduced on 24 October 2023, the Bill sets forth standards for transparency in online advertising, including requirements for disclosure and consent in digital ads.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Nurture Originals, Foster Art, and Keep Entertainment Safe Act of 2023 (NO FAKES Act of 2023)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"The NO FAKES Act aims to tackle the use of deepfake technology without consent and its effects on individuals.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Assuring Safe, Secure, Ethical, and Stable Systems for AI Act (ASSESS AI Act) (SB 1356)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"The US Innovation and Competition Act, introduced in the Senate on 27 April 2023, is designed to boost national technology competitiveness through funding and policy enhancements.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Blueprint for an AI Bill of Rights",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"Anticipated to be adopted by the end of 2023.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Banning Surveillance Advertising Act (S 2833)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"In Progress",
+    "description":"The Banning Surveillance Advertising Act, proposed on 18 September 2023, seeks to limit targeted advertising that uses personal data.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Child Online Safety Modernization Act (HR 5182)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Online safety",
+    "status":"In Progress",
+    "description":"The Digital Privacy Act, introduced to the US House of Representatives on 8 August 2023, seeks to improve protections for consumer data.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Making Age-Verification Technology Uniform, Robust, and Effective (MATURE) Act (S 419)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Online safety",
+    "status":"In Progress",
+    "description":"The legislation, introduced on 14 February 2023 and currently under discussion, concentrates on the regulation of AI and its uses.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Preventing Deepfakes of Intimate Images Act (HR.3106)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Online safety",
+    "status":"In Progress",
+    "description":"This bill, presented in the US House on 5 May 2023, tackles the necessity for more stringent data privacy regulations.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Children and Teens' Online Privacy Protection Act of 2023 (COPPA/S 1418)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Online safety",
+    "status":"In Progress",
+    "description":"Presented in the US Senate on 3 May 2023, this act bolsters cybersecurity efforts and encourages cooperation between public and private sectors in cyber defense.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Kids Online Safety Act (S. 1409)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Online safety",
+    "status":"In Progress",
+    "description":"Presented in the US Senate on 2 May 2023, this bill, if enacted, would substantially reform existing data privacy regulations.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Eliminating Abusive and Rampant Neglect of Interactive Technologies Act of 2023 (EARN IT Act) (HR 2732)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Content moderation",
+    "status":"In Progress",
+    "description":"Brought before the US House in April 2023, this legislation strengthens digital consumer rights and imposes more severe penalties for data breaches.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Disincentivizing Internet Service Censorship of Online Users and Restrictions on Speech and Expression Act (DISCOURSE Act) (SB 921)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Content moderation",
+    "status":"In Progress",
+    "description":"Initiated in the US Senate on 23 March 2023, this bill is aimed at improving digital infrastructure and protecting essential technology resources.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Social Media Accountability Act of 2023 (H 2635)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Content moderation",
+    "status":"In Progress",
+    "description":"Proposed in the US House on 17 April 2023, this measure seeks to create a national framework for verifying digital identities.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Everyone can Notice and-Take down Distribution of Child Sexual Abuse Material Act (END CSAM Act) (SB 823)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Online safety",
+    "status":"In Progress",
+    "description":"Initiated in the US Senate in March 2023, this proposal aims to bolster consumer privacy safeguards and mandate that businesses follow more stringent data management standards.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Revising Existing Procedures on Reporting via Technology (REPORT) Act (S. 474)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Online safety",
+    "status":"In Progress",
+    "description":"The REPORT Act, introduced to the US Senate on 16 February 2023, seeks to require detailed reporting of data breaches.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Journalism Competition and Preservation Act of 2023 (S 1094)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Press freedom",
+    "status":"In Progress",
+    "description":"On 30 March 2023, reintroduced in the US House, this legislation aims to set up a regulatory framework for the ethical handling of biometric data.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Honest Ads Act (HR 2599)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"National security",
+    "status":"In Progress",
+    "description":"Reintroduced to the US House on 13 April 2023, the focus of this bill is to enhance transparency and accountability within the realm of digital advertising.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"RESTRICT (Restricting the Emergence of Security Threats that Risk Information and Communications Technology) Act",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"National security",
+    "status":"In Progress",
+    "description":"Despite broad support, the bipartisan RESTRICT Act has encountered delays in the Senate because of differences regarding particular clauses.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Averting the National Threat of Internet Surveillance, Oppressive Censorship and Influence, and Algorithmic Learning by the Chinese Communist Party (ANTI-SOCIAL CCP) Act",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"National security",
+    "status":"In Progress",
+    "description":"Supported by new US Senators, the DATA Act proposes substantial reforms aimed at enhancing data privacy and security.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Detering America's Technological Adversaries (DATA) Act",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"National security",
+    "status":"In Progress",
+    "description":"The US House Foreign Affairs Committee's ANTI-SOCIAL CCP Act aims to counter the influence of the Chinese Communist Party on social media platforms.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"See Something, Say Something Online Act",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Content moderation",
+    "status":"In Progress",
+    "description":"This proposal seeks to amend Section 230 of the Communications Decency Act, increasing platform accountability for user-generated content.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Language-Inclusive Support and Transparency for Online Services Act of 2023 (LISTOS Act)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Accessibility",
+    "status":"In Progress",
+    "description":"Presented to the US Senate on 2 June 2023, this bill mandates that social media companies implement age verification systems.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"15 Jul 2023"
+  },
+      {
+    "legislation":"AI Disclosure Act of 2023",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"Introduced in the Senate on 5 June 2023, this bill aims to safeguard children from online exploitation by bolstering platform responsibilities.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"No Section 230 Immunity for AI Act (S 1993)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"The No Section 230 Immunity for Big Tech Act, proposed on 14 June 2023, seeks to challenge the existing legal protections afforded to tech giants.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"National AI Commission Act (HR 4223)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"A Bill was introduced to form an artificial intelligence oversight committee, concentrating on setting standards for ethical AI development and use.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Algorithmic Justice and Online Platform Transparency Act",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Online safety",
+    "status":"In Progress",
+    "description":"On 13 July 2023, reintroduced to the US Senate, this legislation aims to control how law enforcement acquires and utilizes facial recognition technology.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Fourth Amendment Is Not For Sale Act of 2023 (HR 4639)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"In Progress",
+    "description":"On 14 July 2023, this bill was presented to the US House of Representatives, proposing actions to safeguard digital privacy at the federal level.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Data Elimination and Limiting Extensive Tracking and Exchange Act (DELETE Act) (S 2121/H 4311)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"In Progress",
+    "description":"On 22 June 202, introduced to the US House of Representatives, this bill is aimed at strengthening cybersecurity measures and defending against online threats.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Digital Consumer Protection Commission Act of 2023",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Consumer protection",
+    "status":"In Progress",
+    "description":"The Digital Consumer Protection Act, proposed on 27 July 2023, introduces new rights and protections for digital age consumers.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Small Business Cyber Resiliency Act (S2740)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Cybersecurity",
+    "status":"In Progress",
+    "description":"Legislation aimed at bolstering election security and integrity through improved cybersecurity practices was passed by the United States Congress on 7 September 2023.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Protect Elections from Deceptive AI Act",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"The Protect Elections from Foreign Interference Act, aimed at defending U.S. elections against external threats, was introduced on 12 September 2023.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"California Bill on Child Pornography Crimes (AB 1831)",
+    "country":"US (California)",
+    "countryCode":"US",
+    "topic":"Online safety",
+    "status":"In Progress",
+    "description":"AB 1831, focusing on Child Pornography and Exploitation Prevention, which introduces more stringent penalties and enforcement actions, was presented on 12 January 2024.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Executive Order 30 on Artificial Intelligence (AI)",
+    "country":"US (state)",
+    "countryCode":"US",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"The Governor of Virginia proposed a bill on 18 January 2024 aimed at regulating digital privacy with a focus on consumer rights and data protection.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"South Carolina Data Processing House Bill 4696",
+    "country":"US (South Carolina)",
+    "countryCode":"US",
+    "topic":"Data",
+    "status":"In Progress",
+    "description":"House Bill 4696, introduced on 9 January 2024, seeks to create a commission for studying the impact of social media on mental health.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"South Carolina Child Data Privacy and Protection Act (H 4541)",
+    "country":"US (South Carolina)",
+    "countryCode":"US",
+    "topic":"Online safety",
+    "status":"In Progress",
+    "description":"The Child Data Privacy and Protection Act, focusing on strengthening the safeguarding of children's online data, was introduced on 9 January 2024.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"New York Act Limiting the Use of Automated Employment Decision-making Tools w/o Bias Audit (S07623)",
+    "country":"US (New York)",
+    "countryCode":"US",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"Enacted on 4 August 2023, the Act amending labour laws to provide digital platform workers with increased rights and protections came into effect.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"California Automated Decision Tools Act (Assembly Bill No. 331)",
+    "country":"US (California)",
+    "countryCode":"US",
+    "topic":"AI",
+    "status":"In Progress",
+    "description":"In April 2023, legislation was proposed to regulate automated decision-making systems, aiming to guarantee fairness and transparency in AI applications.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Law to combat the dissemination of copyright-protected content",
+    "country":"France",
+    "countryCode":"FR",
+    "topic":"Age verification",
+    "status":"Passed",
+    "description":"This law mandates online social networking services to adopt measures to combat the spread of misinformation.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Digital Personal Data Protection Bill 2023",
+    "country":"India",
+    "countryCode":"IN",
+    "topic":"Privacy",
+    "status":"Passed",
+    "description":"The Digital Personal Data Protection Bill, introduced on 11 August 2023, seeks to set up extensive data protection legislation in India.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Minister of Communication and Informatics (MOCI) Regulation No. 5 of 2020 on Private Electronic System Operators, as lastly amended by MOCI Regulation No. 10 of 2021 (MOCI Regulation 5) (ESO)",
+    "country":"Indonesia",
+    "countryCode":"ID",
+    "topic":"Privacy",
+    "status":"Passed",
+    "description":"Legislation passed on 20 September 2022 outlines the drafting of implementation rules for digital payment providers, emphasizing transaction security and consumer protection.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Artificial Intelligence (AI) regulation in the proposed Law on cybersecurity",
+    "country":"Ireland",
+    "countryCode":"IE",
+    "topic":"Online safety",
+    "status":"Passed",
+    "description":"The OSMR Act, regulating online social media platforms to safeguard user safety and data protection, was signed into law on 10 December 2023.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Online Safety and Media Regulation Bill",
+    "country":"Italy",
+    "countryCode":"IT",
+    "topic":"Copyright",
+    "status":"Passed",
+    "description":"On 12 July 2023, the Senate passed a law imposing more rigorous data protection regulations on tech companies.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Personal Data Protection Authority of Turkey (KVKK) Decision 2023/1154",
+    "country":"Japan",
+    "countryCode":"JP",
+    "topic":"Privacy",
+    "status":"Passed",
+    "description":"The Act amending the Telecommunications Business Act, which enhances consumer rights and privacy protections, was passed on 16 June 2023.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Republic Act 11930 Anti-Online Sexual Abuse and Exploitation of Children (Anti-OSAEC) Act",
+    "country":"Phillippines",
+    "countryCode":"PH",
+    "topic":"Online safety",
+    "status":"Passed",
+    "description":"This encompasses the production, deliberate access, and intentional dissemination of misinformation and disinformation online, subject to penalties.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"AI Governance Framework",
+    "country":"Singapore",
+    "countryCode":"SG",
+    "topic":"Online safety",
+    "status":"Passed",
+    "description":"The bill, passed on 9 November 2022 and effective from 1 January 2023, introduces substantial amendments to bolster data protection and privacy.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Law No. 19234 amending the Personal Information Protection Act (PIPA)",
+    "country":"South Korea",
+    "countryCode":"KR",
+    "topic":"Privacy",
+    "status":"Passed",
+    "description":"This is scheduled to take effect on 15 September 2023.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"South Korea regulations on the overseas transfer of personal information",
+    "country":"South Korea",
+    "countryCode":"KR",
+    "topic":"Privacy",
+    "status":"Passed",
+    "description":"Effective 1 January 2024, the section of PIPA detailing data subject rights and obligations will offer clearer guidelines for personal data management.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Guidance for the safe use of personal information and artificial intelligence (AI)",
+    "country":"South Korea",
+    "countryCode":"KR",
+    "topic":"Data goverance",
+    "status":"Passed",
+    "description":"Updated regulations for overseeing digital platforms, including more stringent data management requirements, were enacted on 16 October 2023.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"PIPC enforcement rules amendment - Artificial Intelligence (AI) privacy team",
+    "country":"South Korea",
+    "countryCode":"KR",
+    "topic":"AI",
+    "status":"Passed",
+    "description":"The Korean Personal Information Protection Commission introduced new data protection guidelines for businesses on 3 August 2023.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Regulations on the Protection of Minors on the Internet",
+    "country":"South Korea",
+    "countryCode":"KR",
+    "topic":"AI",
+    "status":"Passed",
+    "description":"Amendments to the Personal Information Protection Law on 8 September 2023 strengthened data privacy and security measures.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Competition (Amendment) Act 2022",
+    "country":"Turkey",
+    "countryCode":"TR",
+    "topic":"Data goverance",
+    "status":"Passed",
+    "description":"The Personal Data Protection Bill, marking a major advance in strengthening data privacy laws, was officially adopted on 25 July 2023.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Online Safety Bill",
+    "country":"United Kingdom",
+    "countryCode":"UK",
+    "topic":"Online safety",
+    "status":"Passed",
+    "description":"The Online Safety Bill was passed in September 2023, set for implementation in mid-2024, centering on online safety and creating obligations for digital service providers.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Content Monitoring Framework, Online Safety Act",
+    "country":"United Kingdom",
+    "countryCode":"UK",
+    "topic":"Tax",
+    "status":"Passed",
+    "description":"The Finance (No. 2) Bill, encompassing measures for digital taxation and regulation of digital financial services, was passed on 4 July 2023.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"New York Act Prohibiting the distribution of AI-generated pornographic images without the subject's consent (S 01042)",
+    "country":"US (New York)",
+    "countryCode":"US",
+    "topic":"AI",
+    "status":"Passed",
+    "description":"The Bill, emphasizing user privacy rights by banning the sale of personal data without explicit consent, was passed on 28 November 2023.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Texas Data Privacy and Security Act (HB 4)",
+    "country":"US (Texas)",
+    "countryCode":"US",
+    "topic":"Online safety",
+    "status":"Passed",
+    "description":"An Act was passed to limit social media access for minors under 16 without parental consent.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Connecticut Act Concerning Online Privacy, Data and Safety Protections (SB 3/Act 23-56)",
+    "country":"US (Connecticut)",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"Passed",
+    "description":"The Texas House of Representatives adopted an Act on 15 May 2023 to improve digital privacy and security protocols.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Texas House Bill 20",
+    "country":"US (Texas)",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"Passed",
+    "description":"The CT Act Concerning Online Privacy Protection for Minors, expanding online protections for minors, was enacted on 12 June 2023.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"California Age-Appropriate Design Code Act (A.B. 2273)",
+    "country":"US (California)",
+    "countryCode":"US",
+    "topic":"Online safety",
+    "status":"Passed",
+    "description":"The case of NetChoice, LLC v. Paxton challenges the regulation, with decisions on its constitutionality pending.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Virginia Senate Bill 1515",
+    "country":"US (Virginia)",
+    "countryCode":"US",
+    "topic":"Online safety",
+    "status":"Passed",
+    "description":"Set to take effect on 1 July 2024.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"California Consumer Privacy Act of 2020 (Proposition 24)",
+    "country":"US (California)",
+    "countryCode":"US",
+    "topic":"Online safety",
+    "status":"Passed",
+    "description":"Set to be implemented on 1 July 2023, this introduces civil penalties for failing to comply with data protection legislation.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Iowa Consumer Data Protection Act (SF 262)",
+    "country":"US (Iowa)",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"Passed",
+    "description":"The Delaware Personal Data Protection Act, signed on 29 June 2023, enhances consumer rights regarding data privacy.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Indiana Senate Bill on consumer data protection (SB 5)",
+    "country":"US (Indiana)",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"Passed",
+    "description":"Set to be enforced starting 1 July 2025, this outlines measures dedicated to the protection of personal health information on the internet.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Tennessee Information Protection Act (HB 1181/SB 73)",
+    "country":"US (Tennessee)",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"Passed",
+    "description":"Effective from 1 January 2026, this establishes a regulatory framework governing the use of personal data in artificial intelligence.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Louisiana Secure Online Child Interaction and Age Limitation Act (SB 162)",
+    "country":"US (Louisiana)",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"Passed",
+    "description":"Effective from 1 July 2024, this regulation applies to companies that process sensitive personal data and requires enhanced data security measures.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Virginia Consumer Data Protection Act (VCDPA)",
+    "country":"US (Virginia)",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"Passed",
+    "description":"Effective from 1 July 2024, guidelines for complying with the new data protection regulations were published on 28 June 2023.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Montana Consumer Data Privacy Act (SB 384)",
+    "country":"US (Montana)",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"Passed",
+    "description":"Scheduled to take effect on 31 December 2023, this grants individuals greater control over their personal data on the internet.",
+    "lastUpdated":"28 Oct 2023",
+    "dateCreated":"2 May 2023"
+  },
+    {
+    "legislation":"Oregon Data Broker Registry (HB 2052)",
+    "country":"US (Oregon)",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"Passed",
+    "description":"Set to become effective on 1 October 2024, this encompasses new regulations for digital payment services aimed at boosting user security.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"18 Apr 2023"
+  },
+    {
+    "legislation":"Texas Consumer Data Protection Act (HB 1844 / HB 4)",
+    "country":"United States (Texas)",
+    "countryCode":"US",
+    "topic":"Data goverance",
+    "status":"Passed",
+    "description":"The Data Broker Registry (HB 123), established on 22 June 2023, mandates data brokers to register and reveal their data collection practices.",
+    "lastUpdated":"25 Jul 2023",
+    "dateCreated":"15 Jul 2023"
+  },
+    {
+    "legislation":"Florida Digital Bill of Rights (SB 262)",
+    "country":"United States (Florida)",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"Passed",
+    "description":"This legislation, which imposes tighter regulations on data privacy and consumer rights, was signed into law by the Governor of Texas on 18 May 2023.",
+    "lastUpdated":"27 Nov 2023",
+    "dateCreated":"13 Feb 2023"
+  },
+    {
+    "legislation":"Act relating to the creation of the artificial intelligence advisory council (HB 2060)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Privacy",
+    "status":"Passed",
+    "description":"The Florida Digital Bill of Rights, which acknowledges digital rights such as privacy and online freedom of speech, was enacted on 6 June 2023.",
+    "lastUpdated":"25 Jan 2024",
+    "dateCreated":"7 Aug 2023"
+  },
+    {
+    "legislation":"Amendment to the Personal Information Protection Act (PIPA)",
+    "country":"United States",
+    "countryCode":"US",
+    "topic":"Online safety",
+    "status":"Passed",
+    "description":"Awaiting the Governor's signature, the SCOPE Act, which enhances consumer privacy protections, has passed both the TX House and Senate.",
+    "lastUpdated":"12 Dec 2023",
+    "dateCreated":"18 Apr 2023"
   }
   ]
+
+
 
