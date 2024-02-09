@@ -2,7 +2,7 @@ import React from 'react';
 import { ComposableMap, Geographies, Geography } from 'react-simple-maps';
 
 const MapChart = ({ countriesWithPolicies, onCountryClick }) => {
-    const mapFileUrl = '/src/components/ne_10m_admin_0_countries.json';
+    const mapFileUrl = '../../public/ne_10m_admin_0_countries.json';
 
     return (
         <ComposableMap>
@@ -17,7 +17,7 @@ const MapChart = ({ countriesWithPolicies, onCountryClick }) => {
                                 onClick={() => onCountryClick(geo.properties.ISO_A2)}
                                 style={{
                                     default: {
-                                        fill: isPolicyPresent ? '##FFE464' : '#DDD',
+                                        fill: isPolicyPresent ? '#FFE464' : '#DDD',
                                         outline: 'none',
                                     },
                                     hover: {
@@ -25,7 +25,7 @@ const MapChart = ({ countriesWithPolicies, onCountryClick }) => {
                                         outline: 'none',
                                     },
                                     pressed: {
-                                        fill: isPolicyPresent ? '##FFD200' : '#BBB',
+                                        fill: isPolicyPresent ? '#FFD200' : '#BBB',
                                         outline: 'none',
                                     },
                                 }}
