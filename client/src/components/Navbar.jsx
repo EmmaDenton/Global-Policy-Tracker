@@ -32,27 +32,26 @@ const Navbar = () => {
   }
 
   return (
-    <div className="ui orange inverted menu" id='orange' >
-      <div className="ui container"id='navBar'>
+    <div className="ui orange inverted stackable menu" id='orange'>
+      <div className="ui container" id='navBar'>
         <a className="header item" id='linkGlobal'>
           <Link
             to="/"
-            //edit className
-            className={currentPage === '/Home' ? 'nav-link active' : 'nav-link'} 
-            ><img src={logo} alt="logo" className='logo' />
-            </Link>
+            className={currentPage === '/Home' ? 'nav-link active' : 'nav-link'}
+          >
+            <img src={logo} alt="logo" className='logo' />
+          </Link>
         </a>
-
         <div className="right menu">
-        {Auth.loggedIn() && (
-          <Link to="/saved" id='savedPolicies' class="item" >My Saved Policies</Link>
+          {Auth.loggedIn() && (
+            <Link to="/saved" id='savedPolicies' className="item">My Saved Policies</Link>
           )}
           <a className="item" id='donateLink'>
             <div>
               <button id='itemDonate' onClick={submitCheckout}>Donate</button>
             </div>
           </a>
-          <div>
+          <div id='containerLogout'>
             {Auth.loggedIn() ? (
               <>
                 <span id='userName'>Hey there, {Auth.getProfile().data.username}!</span>
@@ -62,18 +61,19 @@ const Navbar = () => {
               </>
             ) : (
               <>
-                <Link
-              to="/login"
-              className={currentPage === '/LoginForm' ? 'nav-link active' : 'nav-link'} class="item" id='itemLogin'
+              <Link
+                to="/login"
+                className={currentPage === '/LoginForm' ? 'nav-link active' : 'nav-link'} class="item" id='itemLogin'
               >
-              Log in
+                Log in
               </Link>
               </>
             )}
           </div>
         </div>
       </div>
-    </div>
+  </div>
+
   );
 };
 
