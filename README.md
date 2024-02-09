@@ -8,9 +8,6 @@ Clickable world map to sort results by selected country.
 Search bar with filters to further narrow results. Filters include: status of policy, country and topic.
 Users with an account will be able to save or “pin” policies. Allowing them to find policies again easily, stay up to date on progress and changes.
 
-## Link to the website
-[Global Policy Tracker]()
-
 ## How does it look?
 Home Page
 ![1111](https://github.com/EmmaDenton/Global-Policy-Tracker/assets/138730100/5fb3bea1-38a5-428d-ba20-a580c91d1b7f)
