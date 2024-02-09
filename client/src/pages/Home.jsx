@@ -86,7 +86,7 @@ const handleFormSubmit = (event) => {
 };
   return (
     <main id='mainContainer2'>
-      <div>
+      <div >
       <Map setSelectedCountry={setSelectedCountry} onCountryClick={handleCountryClick} countriesWithPolicies={Array.from(countriesWithPolicies)} />
       <div className="ui right action left icon input">
       <i className="search icon"></i>
@@ -97,12 +97,6 @@ const handleFormSubmit = (event) => {
             placeholder="Search"
             className="ui action input formInput"
           />
-          <div className="ui fluid search selection dropdown">
-          <select className="ui fluid search selection dropdown" value={selectedCountry} onChange={(e) => {setSelectedCountry(e.target.value); handleFormSubmit(e)}}>
-          <option className="item" value="">Country</option>
-            <option className="item" value="aus">Australia</option>
-          </select>
-          </div>
           <select className="ui fluid search selection dropdown" value={selectedTopic} onChange={(e) => {setSelectedTopic(e.target.value); handleFormSubmit(e)}}>
             <option value="">Topic</option>
             <option value="aI">AI</option>
@@ -117,6 +111,7 @@ const handleFormSubmit = (event) => {
             <option value="implemented">Implemented</option>
             <option value="inProgress">In Progress</option>
           </select>
+          {/* delete submit?? */}
           <button className="ui button" onClick={handleFormSubmit}>Submit</button>
       </div>
       {searchedPolicies.map((policy) => {
@@ -135,8 +130,6 @@ const handleFormSubmit = (event) => {
         <div className='status'>{policy.status}</div>
         <div className='lastUpdated'>{policy.lastUpdated}</div>
         <div className='Description'>{policy.description}</div>
-        <div className="supportingDocumentsTitle">Supporting Documents</div>
-        <div className='Links'>{policy.links}</div>
       </div>
        )})}
       </div>
