@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useQuery, gql } from '@apollo/client';
-import { GET_POLICIES } from '../utils/queries'; // Import or define this
+import { GET_POLICIES } from '../utils/queries';
 import { GET_ME } from '../utils/queries';
 
 const SavedPolicy = () => {
@@ -22,23 +22,46 @@ const SavedPolicy = () => {
   if (loadingPolicies || loadingUser) return <div>Loading...</div>;
 
   return (
-    <div>
-      <h2>My Starred Policies</h2>
-      {starredPolicies.length ? (
-        <ul>
-          {starredPolicies.map((policy) => (
-            <li key={policy._id}>
-              <h3>{policy.legislation}</h3>
-              <p>{policy.description}</p>
-              {/* Add more policy details here */}
+    <div id="mainContainer2">
+      <ul>
+        {starredPolicies.length ? (
+          starredPolicies.map((policy) => (
+            <li key={policy._id} className="resultsCard">
+              <div className="content-left">
+              <div className='legislation'>{policy.legislation}</div> 
+              <div className='countrTitle'>{policy.country}</div>
+              <div className='topic'>{policy.topic}</div>
+              <div className='Description'>{policy.description}</div>
+              </div>
+              <div className="content-right">
+              <div className='lastUpdated'>{policy.lastUpdated}</div>
+              <div 
+                className='status' 
+                style={{
+                  backgroundColor: policy.status === 'Implemented' ? '#B8F8D5' : 
+                                  policy.status === 'Not Yet Drafted' ? '#FAD02E' : 
+                                  policy.status === 'Passed' ? '#B8F8D5' : 
+                                  policy.status === 'In Progress' ? '#F4A261' : 'transparent',
+                  display: 'inline-flex', 
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  borderRadius: '15px',
+                  padding: '0px 10px',
+                  fontSize: '14px',
+                  width: 'auto',
+                  height: '20px'
+                }}
+              >
+                {policy.status}
+              </div>
+              </div>
             </li>
-          ))}
-        </ul>
-      ) : (
-        <p>You have not starred any policies yet.</p>
-      )}
+          ))
+        ) : (
+          <li>You have not starred any policies yet.</li>
+        )}
+      </ul>
     </div>
-  );
-};
+  )}
 
 export default SavedPolicy;

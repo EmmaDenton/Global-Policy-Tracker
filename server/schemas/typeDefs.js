@@ -13,6 +13,7 @@ const typeDefs = gql`
     _id: ID
     legislation: String!
     countryCode: String!
+    country: String,
     topic: String
     status: String
     description: String
@@ -41,8 +42,8 @@ const typeDefs = gql`
   type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    addPolicy(legislation: String!, countryCode: String!, topic: String!, status: String, description: String, lastUpdated: String!, dateCreated: String!): Policy
-    updatePolicy(_id: ID!, legislation: String, countryCode: String, topic: String, status: String, description: String, lastUpdated: String, dateCreated: String): Policy
+    addPolicy(legislation: String!, countryCode: String!, country: String, topic: String!, status: String, description: String, lastUpdated: String!, dateCreated: String!): Policy
+    updatePolicy(_id: ID!, legislation: String, countryCode: String, country: String, topic: String, status: String, description: String, lastUpdated: String, dateCreated: String): Policy
     deletePolicy(_id: ID!): Policy
     starPolicy(policyId: ID!): User
     unstarPolicy(policyId: ID!): User
