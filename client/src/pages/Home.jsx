@@ -18,7 +18,6 @@ function Home() {
 
   const handleCountryClick = (countryCode) => {
     setSelectedCountry(countryCode);
-    // You can also trigger a search directly here if needed
     handleSearch({ countryCode });
   };
 
@@ -131,7 +130,6 @@ const handleFormSubmit = (event) => {
             <option value="implemented">Implemented</option>
             <option value="inProgress">In Progress</option>
           </select>
-          {/* delete submit?? */}
           <button className="ui button" onClick={handleFormSubmit}>Submit</button>
       </div>
       {searchedPolicies.map((policy) => {
