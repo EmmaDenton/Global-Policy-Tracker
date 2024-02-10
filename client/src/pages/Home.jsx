@@ -18,7 +18,6 @@ function Home() {
 
   const handleCountryClick = (countryCode) => {
     setSelectedCountry(countryCode);
-    // You can also trigger a search directly here if needed
     handleSearch({ countryCode });
   };
 
@@ -99,10 +98,30 @@ const handleFormSubmit = (event) => {
           />
           <select className="ui fluid search selection dropdown" value={selectedTopic} onChange={(e) => {setSelectedTopic(e.target.value); handleFormSubmit(e)}}>
             <option value="">Topic</option>
-            <option value="aI">AI</option>
+            <option value="Age verification">Age verification</option>
+            <option value="Accessibility">Accessibility</option>
+            <option value="AI">AI</option>
+            <option value="Climate">Climate</option>
             <option value="Competition">Competition</option>
-            <option value="e-commerce">E-commerce</option>
-            <option value="onlineSafety">Online Safety</option>
+            <option value="Consumer protection">Consumer protection</option>
+            <option value="Content moderation">Content moderation</option>
+            <option value="Copyright">Copyright</option>
+            <option value="Corporate governance">Corporate governance</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+            <option value="Data">Data</option>
+            <option value="Data goverance">Data goverance</option>
+            <option value="Data transfers">Data transfers</option>
+            <option value="E-commerce">E-commerce</option>
+            <option value="Employment">Employment</option>
+            <option value="Financial">Financial</option>
+            <option value="Media">Media</option>
+            <option value="Misinformation">Misinformation</option>
+            <option value="National security">National security</option>
+            <option value="Online safety">Online safety</option>
+            <option value="Press freedom">Press freedom</option>
+            <option value="Privacy">Privacy</option>
+            <option value="Security">Security</option>
+            <option value="Tax">Tax</option>
           </select>
           <select className="ui basic floating dropdown button" value={selectedStatus} onChange={(e) => {setSelectedStatus(e.target.value); handleFormSubmit(e)}}>
           <option value="">Status</option>
@@ -111,26 +130,50 @@ const handleFormSubmit = (event) => {
             <option value="implemented">Implemented</option>
             <option value="inProgress">In Progress</option>
           </select>
-          {/* delete submit?? */}
           <button className="ui button" onClick={handleFormSubmit}>Submit</button>
       </div>
       {searchedPolicies.map((policy) => {
           const isStarred = starredPolicyIds.has(policy._id);
             return (
-      <div className="resultsCard" key={policy._id}>
-        <div className='legislation'>{policy.legislation}</div>
-        <div key={policy._id}>
-        {isStarred ? (
-        <i onClick={() => handleUnstarPolicy(policy._id)} className="star icon starButton"></i>
-      ) : (
-        <i onClick={() => handleStarPolicy(policy._id)} className="star outline icon starButton"></i>
-      )}
-          </div>
-        <div className='topic'>{policy.topic}</div>
-        <div className='status'>{policy.status}</div>
-        <div className='lastUpdated'>{policy.lastUpdated}</div>
-        <div className='Description'>{policy.description}</div>
-      </div>
+              <li key={policy._id} className="resultsCard">
+                      <div className="content-left">
+                        <div className="title">
+                        <div className='legislation'>{policy.legislation}</div> 
+                        <div className='countryTitle'>{policy.country}</div>
+                        <div key={policy._id}>
+                        {isStarred ? (
+                        <i onClick={() => handleUnstarPolicy(policy._id)} className="star icon starButton"></i>
+                        ) : (
+                        <i onClick={() => handleStarPolicy(policy._id)} className="star outline icon starButton"></i>
+                        )}
+                          </div>
+                          </div>
+                        <div className='topic'>{policy.topic}</div>
+                        <div className='Description'>{policy.description}</div>
+                        </div>
+                        <div className="content-right">
+                        <div className='lastUpdated'>{policy.lastUpdated}</div>
+                        <div 
+                        className='status' 
+                        style={{
+                        backgroundColor: policy.status === 'Implemented' ? '#FFC5CD' : 
+                                    policy.status === 'Not Yet Drafted' ? '#FFF2C5' : 
+                                    policy.status === 'Passed' ? '#B8F8D5' : 
+                                    policy.status === 'In Progress' ? '#E1C3FF' : 'transparent',
+                        display: 'inline-flex', 
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        borderRadius: '15px',
+                        padding: '0px 10px',
+                        fontSize: '14px',
+                        width: '120px',
+                        height: '20px'
+                        }}
+                       >
+                  {policy.status}
+                </div>
+              </div>
+            </li>
        )})}
       </div>
     </main>
@@ -139,4 +182,3 @@ const handleFormSubmit = (event) => {
 
 
 export default Home;
-

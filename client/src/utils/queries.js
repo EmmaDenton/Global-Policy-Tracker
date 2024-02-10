@@ -10,6 +10,7 @@ export const GET_ME = gql`
         _id
         legislation
         countryCode
+        country
         topic
         status
         description
@@ -25,7 +26,13 @@ query getAllPolicies {
   policies {
     _id
     legislation
+    countryCode
+    country
+    topic
+    status
     description
+    lastUpdated
+    dateCreated
   }
 }
 `;

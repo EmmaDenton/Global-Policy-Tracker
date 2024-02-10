@@ -85,7 +85,7 @@ const SignupForm = () => {
                   type="submit"
                   id='submitButton'
                   >
-                    Sing up
+                    Sign up
                   </button>
                 </div>
                 

@@ -2,7 +2,7 @@ import React from 'react';
 import { ComposableMap, Geographies, Geography } from 'react-simple-maps';
 
 const MapChart = ({ countriesWithPolicies, onCountryClick }) => {
-    const mapFileUrl = '../../public/ne_10m_admin_0_countries.json';
+    const mapFileUrl = '/ne_10m_admin_0_countries.json';
 
     return (
         <ComposableMap>
